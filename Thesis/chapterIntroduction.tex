@@ -1,0 +1,9 @@
+\chapter{Introduction}
+
+The concept of path tracing was initially introduced by Kajiya in 1986 (\cite{kajiya}), along with the rendering equation. Basically, the idea was to create paths starting from the camera and to extend these path at each surface intersection according to some sampling strategy (e.g. according to the local BSDF).\\
+Over the years, several improvements to this approach were developed. Examples include next event estimation (creating direct connections from a surface point to a light source) or bidirectional path tracing (\cite{lafortune93}, \cite{lafortune96}), where paths are created not only from camera to light source, but also from light to camera. 
+
+We will introduce a new sampling strategy for extending paths that can be combined with known sampling techniques, and evaluate if and when this strategy can improve the quality of the resulting images. Our strategy is based on caching the incident radiance, i.e. we will place caches across the scene and each of these caches will store the incident radiance for different directions, thus allowing us to sample directions from irradiance.
+
+Chapter \ref{chapterBasics} will outline some concepts of probability theory and numerical integration, and introduce the problem of physically based light transport. In chapter \ref{chaper:PathTracing} we will introduce path tracing, a common algorithm to render photorealistic images. Chapter \ref{chapter:irradiance_caching} covers our new approach: Creating caches  that can later be used for irradiance importance sampling. In chapter \ref{chapter:rendering} we show how we combined these caches with our basic path tracing algorithm and evaluate the results. Finally, chapter \ref{chapter:relatedWork} references some related concepts.
+

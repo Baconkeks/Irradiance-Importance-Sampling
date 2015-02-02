@@ -1,0 +1,98 @@
+\relax 
+\providecommand{\transparent@use}[1]{}
+\citation{ward}
+\citation{octahedronpaper}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Caching incident radiance}{27}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chapter:irradiance_caching}{{4}{27}{Caching incident radiance\relax }{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Environment Map Parameterization}{27}{section.4.1}}
+\newlabel{envmap param}{{4.1}{27}{Environment Map Parameterization\relax }{section.4.1}{}}
+\newlabel{planar_projection}{{\relax 4.1}{27}{Environment Map Parameterization\relax }{equation.4.1.1}{}}
+\newlabel{planar_projection2}{{\relax 4.2}{27}{Environment Map Parameterization\relax }{equation.4.1.2}{}}
+\transparent@use{.56079}
+\transparent@use{.76471}
+\transparent@use{.76459}
+\transparent@use{.76471}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Planar Projection}}{28}{figure.4.1}}
+\newlabel{texture_coord}{{\relax 4.1}{28}{Planar Projection\relax }{figure.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces The upper hemisphere is mapped to the left side, while the lower hemisphere (if needed) is mapped to the right half.\newline  The borders in the final map match the octahedron edges.}}{28}{figure.4.2}}
+\newlabel{octamap}{{\relax 4.2}{28}{The upper hemisphere is mapped to the left side, while the lower hemisphere (if needed) is mapped to the right half.\newline The borders in the final map match the octahedron edges}{figure.4.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Creating Caches}{28}{section.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Modified Photon Mapping}{28}{subsection.4.2.1}}
+\newlabel{modified photon mapping}{{4.2.1}{28}{Modified Photon Mapping\relax }{subsection.4.2.1}{}}
+\citation{kdref1}
+\citation{nanoflann}
+\newlabel{initialenergy}{{\relax 4.4}{29}{Modified Photon Mapping\relax }{equation.4.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Placing Caches}{30}{subsection.4.2.2}}
+\newlabel{placing caches}{{4.2.2}{30}{Placing Caches\relax }{subsection.4.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Filling a Cache}{30}{subsection.4.2.3}}
+\citation{epanechnikov}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Left: No filtering.\newline  Right: bilinear filtering and Gaussian filter.\newline  Both images were rendered with IRCs only (no BSDF sampling or NEE), using 150.000 photon paths ($\approx $ 750.000 photons), 20.000 caches, 500 photons per cache and 64 samples per pixel.}}{31}{figure.4.3}}
+\newlabel{filtervergleich}{{\relax 4.3}{31}{Left: No filtering.\newline Right: bilinear filtering and Gaussian filter.\newline Both images were rendered with IRCs only (no BSDF sampling or NEE), using 150.000 photon paths ($\approx $ 750.000 photons), 20.000 caches, 500 photons per cache and 64 samples per pixel}{figure.4.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces When filling the cache with 4 photons, photons p1 to p4 are considered and p5 is ignored. However, the incoming direction of p2 results in a negative cosine with the cache's surface normal, meaning that the photon arrives from below from the cache's point of view. Thus p2 is discarded for this cache and only p1, p3 and p4 are used to fill it.}}{32}{figure.4.4}}
+\newlabel{fill_cache_cos}{{\relax 4.4}{32}{When filling the cache with 4 photons, photons p1 to p4 are considered and p5 is ignored. However, the incoming direction of p2 results in a negative cosine with the cache's surface normal, meaning that the photon arrives from below from the cache's point of view. Thus p2 is discarded for this cache and only p1, p3 and p4 are used to fill it}{figure.4.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3.1}Creating a useful probability density function}{32}{subsubsection.4.2.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3.2}Convert probabilities to solid angle}{34}{subsubsection.4.2.3.2}}
+\newlabel{solidAngleConversion}{{4.2.3.2}{34}{Convert probabilities to solid angle\relax }{subsubsection.4.2.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Solid angle maps with $4\times 4$, $8\times 8$ and $16\times 16$ texels for one hemisphere}}{35}{figure.4.5}}
+\newlabel{solid_angle_map}{{\relax 4.5}{35}{Solid angle maps with $4\times 4$, $8\times 8$ and $16\times 16$ texels for one hemisphere\relax }{figure.4.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Solid angle areas covered by texels of different height for a 8x8 map. Texels on the octahedron surface's center (blue, green) cover a larger solid angle than those close to the surface (yellow) or at the top (red).\newline  Note that the difference between the texel values also depends on their horizontal distribution.}}{35}{figure.4.6}}
+\newlabel{solid_angle_skizze}{{\relax 4.6}{35}{Solid angle areas covered by texels of different height for a 8x8 map. Texels on the octahedron surface's center (blue, green) cover a larger solid angle than those close to the surface (yellow) or at the top (red).\newline Note that the difference between the texel values also depends on their horizontal distribution}{figure.4.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Left: Solid angle correction with $\frac  {width \cdot height}{2\pi }$\newline  Right: Difference with correct reference, multiplied by $4$. Note the vertical stripes on the wall in both images and the bright area in the middle of the floor.}}{35}{figure.4.7}}
+\newlabel{solid_angle_korrektur}{{\relax 4.7}{35}{Left: Solid angle correction with $\frac {width \cdot height}{2\pi }$\newline Right: Difference with correct reference, multiplied by $4$. Note the vertical stripes on the wall in both images and the bright area in the middle of the floor}{figure.4.7}{}}
+\citation{kdref1}
+\citation{nanoflann}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Storing Cache}{36}{subsection.4.2.4}}
+\newlabel{storing cache}{{4.2.4}{36}{Storing Cache\relax }{subsection.4.2.4}{}}
+\@setckpt{chapterIrradianceCaching}{
+\setcounter{page}{37}
+\setcounter{equation}{5}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{2}
+\setcounter{subsection}{4}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{7}
+\setcounter{table}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{34}
+\setcounter{btxromaniannumeral}{0}
+\setcounter{parentequation}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{3}
+\setcounter{ALG@line}{12}
+\setcounter{ALG@rem}{12}
+\setcounter{ALG@nested}{0}
+\setcounter{ALG@Lnr}{2}
+\setcounter{ALG@blocknr}{10}
+\setcounter{ALG@storecount}{0}
+\setcounter{ALG@tmpcounter}{0}
+\setcounter{blindtext}{1}
+\setcounter{Blindtext}{5}
+\setcounter{blind@countparstart}{0}
+\setcounter{blindlist}{0}
+\setcounter{blindlistlevel}{0}
+\setcounter{blindlist@level}{0}
+\setcounter{blind@listcount}{0}
+\setcounter{blind@levelcount}{0}
+\setcounter{blind@randomcount}{0}
+\setcounter{blind@randommax}{0}
+\setcounter{blind@pangramcount}{0}
+\setcounter{blind@pangrammax}{0}
+\setcounter{section@level}{2}
+}

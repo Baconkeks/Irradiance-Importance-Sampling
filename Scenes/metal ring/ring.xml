@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- # Main Scene File -->
+
+<scene version="0.5.0">
+	<integrator type="bdpt">
+		<integer name="maxDepth" value="24"/>
+		<integer name="rrDepth" value="32"/>
+	</integrator>
+
+	<sensor type="perspective">
+		<float name="farClip" value="100"/>
+		<float name="fov" value="49.1343"/>
+		<string name="fovAxis" value="x"/>
+		<float name="nearClip" value="0.1"/>
+		<transform name="toWorld">
+
+			<lookat target="1.9042, 0.758556, -0.126095" origin="2.7979, 1.2038, -0.181436" up="-0.445108, 0.895344, 0.015459"/>
+		</transform>
+
+		<sampler type="ldsampler">
+			<integer name="sampleCount" value="128"/>
+		</sampler>
+
+		<film type="ldrfilm">
+			<boolean name="banner" value="true"/>
+			<float name="exposure" value="0"/>
+			<string name="fileFormat" value="png"/>
+			<float name="gamma" value="-1"/>
+			<integer name="height" value="540"/>
+			<boolean name="highQualityEdges" value="false"/>
+			<string name="label[10,10]" value="Integrator:$integrator['type'], $film['width']x$film['height'],$sampler['sampleCount']spp, rendertime:$scene['renderTime'],memory:$scene['memUsage']"/>
+			<string name="pixelFormat" value="rgb"/>
+			<string name="tonemapMethod" value="gamma"/>
+			<integer name="width" value="960"/>
+
+			<rfilter type="gaussian"/>
+		</film>
+	</sensor>
+
+	<shape type="sphere">
+		<bsdf type="diffuse">
+			<spectrum name="reflectance" value="1.000000 1.000000 1.000000"/>
+		</bsdf>
+		<float name="radius" value="0.200000"/>
+		<point name="center" x="1.108786" y="0.736465" z="0.936703"/>
+
+		<emitter type="area" id="Point-pointlight">
+			<spectrum name="radiance" value="10.000000 10.000000 10.000000"/>
+			<float name="samplingWeight" value="1.000000"/>
+		</emitter>
+	</shape>
+
+	<bsdf type="roughdiffuse" id="Material.003-material">
+		<spectrum name="reflectance" value="0.685959 0.685959 0.685959"/>
+		<boolean name="useFastApprox" value="false"/>
+		<float name="alpha" value="0.740000"/>
+	</bsdf>
+
+	<shape type="serialized" id="Plane_Plane_0000_m000-shape_0">
+		<transform name="toWorld">
+			<matrix value="2.395769 0.000000 0.000000 -0.374523 0.000000 0.000000 2.395769 0.000000 0.000000 -2.395769 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<string name="filename" value="ring/Scene/00002/Plane_0000_m000.serialized"/>
+
+		<ref name="bsdf" id="Material.003-material"/>
+	</shape>
+
+	<bsdf type="conductor" id="Material.002-material">
+		<spectrum name="specularReflectance" value="1.000000 0.139732 0.063244"/>
+		<spectrum name="k" value="2.820000 2.820000 2.820000"/>
+		<spectrum name="eta" value="0.370000 0.370000 0.370000"/>
+		<float name="extEta" value="1.000000"/>
+	</bsdf>
+
+	<shape type="serialized" id="Circle_Circle_0000_m000-shape_0">
+		<transform name="toWorld">
+			<matrix value="1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 -0.017654 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<string name="filename" value="ring/Scene/00002/Circle_0000_m000.serialized"/>
+
+		<ref name="bsdf" id="Material.002-material"/>
+	</shape>
+</scene>

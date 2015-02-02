@@ -1,0 +1,34 @@
+\begin{center}
+\begin{minipage}{0.7\textwidth}
+
+\selectlanguage{english}
+
+\chapter*{Abstract}
+
+For many years path tracing has been a popular choice when it came to rendering photorealistic images. By combining different sampling techniques, the algorithm can be adapted to the complexity and challenges of individual scenes. That way effects like indirect lighting and caustics can be rendered realistically.
+
+This work will introduce a new approach to include irradiance importance sampling to a regular path tracing algorithm. Before an image is rendered, the incident radiance (direct and indirect) across a scene is approximated and cached. The information from these caches can be used to generate paths with a potentially high contribution to the rendering equation. \newline
+Caching and importance sampling the incident radiance enables us to compensate for some of the drawbacks of sampling paths solely according to local surface properties. This approach may also be combined with known sampling techniques, such as next event estimation or generating samples from a BSDF (bidirectional scattering distribution function), using multiple importance sampling.
+
+
+\end{minipage}
+\end{center}
+
+\blankpage
+
+\begin{center}
+\begin{minipage}{0.7\textwidth}
+
+\selectlanguage{ngerman}
+
+\chapter*{Zusammenfassung}
+\begin{otherlanguage}{ngerman}
+Seit einiger Zeit zählt Path Tracing zu den beliebtesten Verfahren bei der Erzeugung fotorealistischer Bilder. Der Algorithmus kann durch Einsatz verschiedener Sampling-Techniken variiert und an die Komplexität der darzustellenden Szene angepasst werden. So sind etwa indirekte Beleuchtung und Kaustiken realistisch darstellbar.
+
+Diese Arbeit stellt den Einsatz von Caches zur Approximation der einfallenden Beleuchtung aus verschiedenen Richtungen vor. Vor der Berechnung eines Bildes wird die einfallende Beleuchtung (direkt und indirekt) überall in der Szene approximiert und in Caches gespeichert. Diese können beim Path Tracing genutzt werden, um Pfade mit potenziell hohem Beitrag zur Rendergleichung zu erzeugen.\newline
+Dadurch lassen sich manche Schwächen ausgleichen, die auftreten, wenn diese Pfade nur nach Oberflächeneigenschaften erzeugt werden. Das Verfahren lässt sich mit bekannten Sampling-Techniken wie Next Event Estimation oder klassischem Sampling nach der BSDF (bidirectional scattering distribution function) durch den Einsatz von Multiple Importance Sampling verbinden.
+
+\end{otherlanguage}
+
+\end{minipage}
+\end{center}

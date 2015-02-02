@@ -1,0 +1,73 @@
+\chapter{Related Work}
+\label{chapter:relatedWork}
+
+This chapter presents some alternative approaches to solve physically based light transport. We will start with Photon Mapping as a basis and introduce Final Gathering, Progressive Photon Mapping and Importance Driven Path Tracing as possible variations.\\
+We also present Irradiance Caching, a technique that does not involve photon maps, but still is rather close to what we were trying to do.
+
+\section{Photon Mapping}
+\label{photon mapping}
+
+Jensen and Christensen first introduced the idea to use photon maps in a bidirectional Monte Carlo ray tracing algorithm in 1994 (\cite{phomaps0}, \cite{phomaps1}). Over the years, many improvements and variations to the original approach were developed. Examples are Final Gathering \ref{final gathering}, Progressive Photon Mapping \ref{prophoma} and Importance Driven Path Tracing using the photon map \ref{idpt chapter}.
+
+Most photon map - based algorithms consist of two passes: One pass to create the photon map, and one pass to render the image.\\
+Chapter \ref{modified photon mapping} already explained how we created our photon map. The exact properties stored for each photon may vary, and sometimes several maps with different degrees of accuracy are built (e.g. \emph{caustic map} for photons that cause caustics, \emph{global photon map} for global illumination \cite[chapter 1.5]{phomaps2}), but the basic steps for creating a photon map are always the same.
+
+Originally photon maps were used in a distributed ray tracing algorithm. The incident radiance is divided into separate parts, such as a direct illumination component ($L_e$), a component for caustics and a component for indirect illumination (\cite{phomaps2}). The caustics component and indirect illumination are evluated with a radiance estimate from the matching photon map.\\
+Photon Mapping is biased but consistent - the average of many rendered images does not converge to the correct solution, while increasing the number of photons does.
+
+
+\section{Final Gathering}
+\label{final gathering}
+
+Final Gathering is applied after the photon mapping pass and before (or while) the image is rendered. Direct illumination and caustics are handled as described before. To compute the indirect global illumination, we create a camera ray and take its first smooth intersection with the scene, called the \emph{final gather point}. Next, a number of \emph{final gather rays} is created over the upper hemisphere at the final gather point. At each first non-delta intersection of a final gather ray with the scene, the global photon map is evaluated to compute the indirect illumination along that ray. That way the total indirect illumination at the gather point can be estimated. The final gather rays are not traced any further.\\
+Computing the indirect illumination for a gather point is relatively expensive, so depending on the scene it can be sufficient to create fewer final gather points and interpolate between them.\\
+Many common render engines include final gathering to their photon-map based algorithms, since it is capable of efficiently producing accurate results for indirect illumination  (\cite{mentalray}, \cite{finalg}).
+
+\section{Progressive Photon Mapping}
+\label{prophoma}
+The quality of conventional photon mapping is always limited by the memory space available for the photon map. The goal of progressive photon mapping is to use an arbitrarily high amount of photons without having to store all of them at the same time. \cite{ppm}\\
+Progressive photon mapping begins with a ray tracing pass to identify and store all visible points (\emph{hit points}) in the scene. The hit points store their current radiance estimate, along with the number of photons and the radius used for that estimate. Thus the image can be rendered after any of the photon tracing passes.\\
+The ray tracing pass is followed by an arbitrary number of photon tracing passes, where each pass increases the accuracy of the radiance estimate for the hit points. In the first photon tracing pass, a photon map is created and a radiance estimate is made for each hit point.  
+Before each subsequent pass, the previous photon map can be deleted. The next pass creates a new photon map that is used to improve the previous radiance estimate. \cite{ppm} developed a procedure that increases the number of photons while simultaneously decreasing the radius used for the radiance estimate in each pass, in order to achieve a consistent (though still biased) algorithm.\\
+Progressive photon mapping works especially well for scenes with SDS paths (light transport paths from specular to diffuse to specular surfaces).
+
+\section{Irradiance Caching}
+\label{irradiance caching}
+
+
+Irradiance Caching was introduced 1988 by \cite{ward}. This approach is built upon the observation that indirect illumination changes smoothly on regular diffuse surfaces, while direct lighting may cause ``hard'' shadow boundaries. Irradiance Caching is designed for ray tracing algorithms where the rendering integral is divided into one part for direct lighting, one for specular reflection and refraction, and a third part for diffuse indirect lighting.\\
+The first two can be approximated with a small number of rays, as they only depend on light from a small solid angle. However, integrating the indirect illumination is quite costly and can lead to an exponentially growing number of rays, since it has to consider light from all directions.
+
+ Irradiance Caching aims to approximate and interpolate this diffuse indirect illumination through caches. The caches are created on the fly as necessary in order to avoid irrelevant computation of irradiance that is not needed for the image. They are rather sparsely distributed over the scene, such that regions with uniform irradiance have close to no caches, and regions with varying irradiance receive more.\\
+ Each cache contains one value for the total irradiance around its position, and the irradiance values are interpolated from the surrounding caches for each ray intersection. The value directly contributes to the integral.\\
+In contrast, our caches store multiple values for radiance from different directions and our algorithm uses theses values to extend a path.
+
+Ward and Heckbert further suggested irradiance gradients \cite{ward2} to improve the interpolation between irradiance values. Another detailed overview on Irradiance Caching and derived methods is given in \cite[chapter 3]{irrc1}.
+
+%http://www.rorydriscoll.com/2009/01/18/irradiance-caching-part-1/
+
+
+\section{Importance Driven Path Tracing using the Photon Map}
+\label{idpt chapter}
+Of all previously explored techniques, Importance Driven Path Tracing is probably the closest thing to our IRCs. In this approach ``a rough estimate of the irradiance based on the photon map is combined with the local reflection model to construct more efficient probability density functions that can be used in an importance sampling scheme'' (\cite[abstract]{idpt}). The idea was introduced by Henrik Wann Jensen in 1995.
+
+The first step here is photon mapping, where - as opposed to our approach - only photons that were reflected at least once are stored. Thus only indirect illumination is covered. In addition, a photon's flux is stored for different wavelengths.
+
+\cite{idpt} skips the step of creating caches and starts rendering right after the photon map was created. Whenever they want to sample an outgoing camera path direction at some surface point $x$ with incoming direction $\omega_i$, they build a new pdf using the photon map:
+
+\begin{itemize}
+\item At first, the $N$ closest photons to $x$ are extracted from a k-d tree. 
+\item Next, the contribution of each photon $p$ with flux $\Phi_p$ and incoming direction $\omega_p$ to the camera path arriving from $\omega_i$ at $x$ is computed as follows:
+\begin{equation}
+contribution = f_s(\omega_p,x,\omega_i) \cdot \Phi_p
+\end{equation}
+In contrast to our approach, this also includes the local BSDF to the pdf.
+\item Then the direction $\omega_p$ of each photon $p$ is converted from a direction $\omega_p = (\theta_p,\phi_p)$ on the hemisphere to a point $(u,v)$ on the unit square.
+\item The unit square is partitioned into $m\times n$ regions, and each photon's contribution is added to the corresponding part of the unit square.
+\item The finalizing steps contain some scaling and eliminating all zeros in order to reach a valid pdf.
+\item An outgoing direction for the path is then sampled from this local pdf.
+\end{itemize}
+
+Jensen was able to reduce the noise in an image through importance sampling with the photon map in comparison to no importance sampling at all.\\
+However, the paper only used test scenes with mostly indirect illumination and - probably because it is relatively old - it did not contain images rendered with BSDF sampling and/or NEE.
+

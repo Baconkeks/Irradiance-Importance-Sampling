@@ -1,0 +1,5 @@
+These caches were extracted before any filtering was implemented.
+
+150k photon paths
+2k photons per cache
+Print cache for every 64x64 pixels

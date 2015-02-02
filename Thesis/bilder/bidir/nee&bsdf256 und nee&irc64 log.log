@@ -1,0 +1,373 @@
+2015-01-26 16:14:11 INFO  main [mainwindow.cpp:80] Mitsuba version 0.5.0 (Windows, 64 bit), Copyright (c) 2014 Wenzel Jakob
+2015-01-26 16:14:11 INFO  main [mainwindow.cpp:83] Configured for RGB-based rendering
+2015-01-26 16:14:11 DEBUG main [WGLSession] Initializing WGL session
+2015-01-26 16:14:11 DEBUG main [WGLRenderer] Using an existing WGL context
+2015-01-26 16:14:11 DEBUG main [GLRenderer] OpenGL renderer : GeForce GTX 660 Ti/PCIe/SSE2
+2015-01-26 16:14:11 DEBUG main [GLRenderer] OpenGL vendor   : NVIDIA Corporation
+2015-01-26 16:14:11 DEBUG main [GLRenderer] OpenGL version  : 4.4.0
+2015-01-26 16:14:11 DEBUG main [GLRenderer] Capabilities: Framebuffers objects are supported.
+2015-01-26 16:14:11 DEBUG main [GLRenderer] Capabilities: GLSL is supported.
+2015-01-26 16:14:11 DEBUG main [GLRenderer] Capabilities: Floating point textures are supported.
+2015-01-26 16:14:11 DEBUG main [GLRenderer] Capabilities: Floating point color buffers are supported.
+2015-01-26 16:14:11 DEBUG main [GLRenderer] Capabilities: Fast buffer blitting is supported.
+2015-01-26 16:14:11 DEBUG main [GLRenderer] Capabilities: Multisample framebuffer objects are supported.
+2015-01-26 16:14:11 DEBUG main [GLRenderer] Capabilities: Vertex buffer objects are supported.
+2015-01-26 16:14:11 DEBUG main [GLRenderer] Capabilities: Geometry shaders are supported.
+2015-01-26 16:14:11 DEBUG main [GLRenderer] Capabilities: Custom texture filtering is supported.
+2015-01-26 16:14:11 DEBUG main [GLRenderer] Capabilities: Synchronization objects are supported.
+2015-01-26 16:14:11 DEBUG main [GLRenderer] Capabilities: Bindless rendering is supported.
+2015-01-26 16:14:11 DEBUG main [Thread] Spawning thread "prvw"
+2015-01-26 16:14:11 DEBUG prvw [WGLDevice] Initializing WGL device
+2015-01-26 16:14:11 DEBUG prvw [WGLRenderer] Initializing WGL renderer
+2015-01-26 16:14:11 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Accumulation program']
+2015-01-26 16:14:11 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Directional shadow map generator']
+2015-01-26 16:14:11 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Paraboloid shadow map generator', maxVertices=4]
+2015-01-26 16:14:11 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Cube/Hemicube shadow map generator (5/6 pass version)']
+2015-01-26 16:14:11 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Cube shadow map generator (1 pass version)', maxVertices=18]
+2015-01-26 16:14:11 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'Hemicube shadow map generator (1 pass version)', maxVertices=15]
+2015-01-26 16:14:11 DEBUG main [GLProgram] Uploading a GPU program : GPUProgram[name = 'Tonemapper [Gamma]']
+2015-01-26 16:14:11 DEBUG main [GLProgram] Uploading a GPU program : GPUProgram[name = 'Tonemapper [Reinhard et al. 2002]']
+2015-01-26 16:14:11 DEBUG main [GLProgram] Uploading a GPU program : GPUProgram[name = 'Downsampling program']
+2015-01-26 16:14:11 DEBUG main [GLProgram] Uploading a GPU program : GPUProgram[name = 'Log-luminance program']
+2015-01-26 16:14:11 DEBUG main [Thread] Spawning thread "wrk0"
+2015-01-26 16:14:11 DEBUG main [Thread] Spawning thread "wrk1"
+2015-01-26 16:14:11 DEBUG main [Thread] Spawning thread "wrk2"
+2015-01-26 16:14:11 DEBUG main [Thread] Spawning thread "wrk3"
+2015-01-26 16:14:14 DEBUG main [Thread] Spawning thread "load"
+2015-01-26 16:14:14 INFO  load [sceneloader.cpp:101] Parsing scene description from "E:\Kekse\projekte\Bachelorarbeit\Szenen\veach_bidir\bidir.xml" ..
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\bdpt.dll" ..
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\ldsampler.dll" ..
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\gaussian.dll" ..
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\hdrfilm.dll" ..
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\perspective.dll" ..
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\dielectric.dll" ..
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\homogeneous.dll" ..
+2015-01-26 16:14:14 DEBUG load [materials.h:195] Medium parameters: sigmaS=[0.74, 0.88, 1.01], sigmaA=[0.032, 0.17, 0.48], g=0
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\isotropic.dll" ..
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\ward.dll" ..
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\diffuse.dll" ..
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\serialized.dll" ..
+2015-01-26 16:14:14 INFO  load [SerializedMesh] Loading shape 0 from "bidir.serialized" ..
+2015-01-26 16:14:14 DEBUG load [SerializedMesh] Done (2162 triangles, 1083 vertices, 0 ms)
+2015-01-26 16:14:14 INFO  load [SerializedMesh] Loading shape 1 from "bidir.serialized" ..
+2015-01-26 16:14:14 DEBUG load [SerializedMesh] Done (70 triangles, 79 vertices, 0 ms)
+2015-01-26 16:14:14 INFO  load [SerializedMesh] Loading shape 2 from "bidir.serialized" ..
+2015-01-26 16:14:14 DEBUG load [SerializedMesh] Done (64 triangles, 96 vertices, 0 ms)
+2015-01-26 16:14:14 INFO  load [SerializedMesh] Loading shape 3 from "bidir.serialized" ..
+2015-01-26 16:14:14 DEBUG load [SerializedMesh] Done (64 triangles, 64 vertices, 0 ms)
+2015-01-26 16:14:14 INFO  load [SerializedMesh] Loading shape 4 from "bidir.serialized" ..
+2015-01-26 16:14:14 DEBUG load [SerializedMesh] Done (128 triangles, 128 vertices, 0 ms)
+2015-01-26 16:14:14 INFO  load [SerializedMesh] Loading shape 5 from "bidir.serialized" ..
+2015-01-26 16:14:14 DEBUG load [SerializedMesh] Done (98 triangles, 165 vertices, 0 ms)
+2015-01-26 16:14:14 INFO  load [PluginManager] Loading plugin "plugins\area.dll" ..
+2015-01-26 16:14:14 INFO  load [SerializedMesh] Loading shape 6 from "bidir.serialized" ..
+2015-01-26 16:14:14 DEBUG load [SerializedMesh] Done (2 triangles, 4 vertices, 0 ms)
+2015-01-26 16:14:14 INFO  load [SerializedMesh] Loading shape 7 from "bidir.serialized" ..
+2015-01-26 16:14:14 DEBUG load [SerializedMesh] Done (2 triangles, 4 vertices, 0 ms)
+2015-01-26 16:14:14 INFO  load [SerializedMesh] Loading shape 8 from "bidir.serialized" ..
+2015-01-26 16:14:14 DEBUG load [SerializedMesh] Done (630 triangles, 391 vertices, 0 ms)
+2015-01-26 16:14:14 INFO  load [SerializedMesh] Loading shape 9 from "bidir.serialized" ..
+2015-01-26 16:14:14 DEBUG load [SerializedMesh] Done (160 triangles, 160 vertices, 0 ms)
+2015-01-26 16:14:14 INFO  load [SerializedMesh] Loading shape 10 from "bidir.serialized" ..
+2015-01-26 16:14:14 DEBUG load [SerializedMesh] Done (12 triangles, 26 vertices, 0 ms)
+2015-01-26 16:14:14 INFO  load [KDTreeBase] Constructing a SAH kd-tree (3392 primitives) ..
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] Creating a preliminary index list (13.3 KiB)
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] Computed scene bounds in 1 ms
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] 
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] kd-tree configuration:
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Traversal cost           : 15.00
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Query cost               : 20.00
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Empty space bonus        : 0.90
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Max. tree depth          : 22
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Scene bounding box (min) : [-2.7449, -2.20849, -1.94146]
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Scene bounding box (max) : [1.64607, 2.05149, 1.95417]
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Min-max bins             : 128
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    O(n log n) method        : use for <= 65536 primitives
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Perfect splits           : yes
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Retract bad splits       : yes
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Stopping primitive count : 6
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Build tree in parallel   : no
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] 
+2015-01-26 16:14:14 INFO  load [KDTreeBase] Finished -- took 102 ms.
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] 
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] Temporary memory statistics:
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Classification storage : 4.1 KiB
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Indirection entries    : 0 (0 B)
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Main thread:
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]       Left events   : 1 chunks (512.0 KiB)
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]       Right events  : 1 chunks (512.0 KiB)
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]       kd-tree nodes : 6481 entries, 1 blocks (512.0 KiB)
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]       Indices       : 11228 entries, 1 blocks (512.0 KiB)
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Total: 2.0 MiB
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] 
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] Optimizing memory layout ..
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] Finished -- took 1 ms.
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] 
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] Structural kd-tree statistics:
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Parallel work units         : 0
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Node storage cost           : 49.7 KiB
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Index storage cost          : 43.9 KiB
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Inner nodes                 : 3182
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Leaf nodes                  : 3183
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Nonempty leaf nodes         : 2138
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Leaf node histogram         : 0(1045) 1(69) 2(106) 3(206) 
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]                                  4(480) 5(437) 6(542) 7(83) 
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]                                  8(52) 9(36) 10(39) 11(20) 
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]                                  12(10) 13(21) 14(12) 15(1) 
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] 
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] Qualitative kd-tree statistics:
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Retracted splits            : 92
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Pruned primitives           : 0
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Largest leaf node           : 34 primitives
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Avg. prims/nonempty leaf    : 5.25
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Expected traversals/query   : 13.93
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Expected leaf visits/query  : 4.41
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Expected prim. visits/query : 17.89
+2015-01-26 16:14:14 DEBUG load [KDTreeBase]    Final cost                  : 566.68
+2015-01-26 16:14:14 DEBUG load [KDTreeBase] 
+2015-01-26 16:14:14 DEBUG load [ShapeKDTree] Precomputing triangle intersection information (159.0 KiB)
+2015-01-26 16:14:14 DEBUG load [ShapeKDTree] Finished -- took 0 ms.
+2015-01-26 16:14:14 DEBUG load [ShapeKDTree] 
+2015-01-26 16:14:14 DEBUG load [Thread] Thread "load" has finished
+2015-01-26 16:14:14 INFO  prvw [PluginManager] Loading plugin "plugins\halton.dll" ..
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=SmoothDiffuseShader[ConstantSpectrumTextureShader], bsdf=SmoothDielectricShader, ds']
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=SmoothDiffuseShader[ConstantSpectrumTextureShader], bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], ds']
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=SmoothDiffuseShader[ConstantSpectrumTextureShader], bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], emitter=AreaLightShader, ds']
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=SmoothDiffuseShader[ConstantSpectrumTextureShader], bsdf=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], ds']
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=AreaLightShader, bsdf=SmoothDielectricShader, ds']
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=AreaLightShader, bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], ds']
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=AreaLightShader, bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], emitter=AreaLightShader, ds']
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=AreaLightShader, bsdf=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], ds']
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], bsdf=SmoothDielectricShader, ds']
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], ds']
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], emitter=AreaLightShader, ds']
+2015-01-26 16:14:14 DEBUG prvw [GLProgram] Uploading a GPU program : GPUProgram[name = 'vpl=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], bsdf=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], ds']
+2015-01-26 16:14:31 INFO  main [PluginManager] Loading plugin "plugins\mypathtracerandphotonmapper.dll" ..
+2015-01-26 16:14:31 DEBUG main [MyPathTracerAndPhotonMapper] traced_photon_paths = 20, number_of_envmaps = 1, fix_w_I = -0.010000, fix_w_E = -0.010000, useFixwE 0, sample_BSDF = 1, samples_for_envmaps 1
+2015-01-26 16:14:32 DEBUG main [Thread] Spawning thread "rend"
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.009891 0.010505 0.014775 0.016542 0.020003 0.024028 0.025575 0.027268 0.025820 0.025673 0.022187 0.020052 0.017131 0.013524 0.010210 0.009744
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.012174 0.012542 0.017352 0.019586 0.025255 0.027783 0.032938 0.034680 0.035294 0.033208 0.029133 0.025697 0.020813 0.017549 0.012665 0.010382
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.013720 0.016763 0.019120 0.021304 0.027342 0.033600 0.035981 0.040522 0.039074 0.037822 0.032349 0.026213 0.022727 0.018653 0.016641 0.014260
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.017524 0.018948 0.022801 0.022777 0.026826 0.031809 0.036570 0.038141 0.036644 0.035490 0.029428 0.026753 0.022752 0.021942 0.019954 0.017770
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.019635 0.025943 0.028004 0.025501 0.023586 0.024396 0.027489 0.028814 0.030311 0.027710 0.025845 0.023979 0.026458 0.027391 0.026556 0.019414
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.023096 0.030066 0.032545 0.030827 0.025108 0.020690 0.019831 0.021083 0.019856 0.019267 0.019414 0.024568 0.032668 0.032569 0.027955 0.022237
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.026090 0.031980 0.036742 0.033502 0.027121 0.018850 0.014972 0.014677 0.013573 0.014677 0.019856 0.026851 0.036276 0.037625 0.032766 0.023758
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.025697 0.035367 0.038288 0.039221 0.028373 0.021328 0.013867 0.010677 0.009228 0.015487 0.020666 0.029354 0.038067 0.037356 0.035588 0.026630
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.025845 0.035466 0.041282 0.034288 0.028446 0.021304 0.013622 0.010063 0.009842 0.014407 0.020641 0.028741 0.036496 0.039098 0.035662 0.026237
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.024077 0.032177 0.037306 0.034729 0.028471 0.020273 0.014383 0.013327 0.013794 0.015953 0.019267 0.027587 0.033649 0.036521 0.033429 0.025501
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.022629 0.028814 0.031760 0.031514 0.024912 0.019291 0.019340 0.020126 0.019414 0.021009 0.018506 0.026188 0.028520 0.032619 0.030017 0.022507
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.019979 0.025280 0.025771 0.026262 0.022433 0.024838 0.027023 0.030778 0.027833 0.027710 0.024593 0.022899 0.026605 0.028299 0.025476 0.019340
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.017352 0.020101 0.022752 0.021942 0.026851 0.030581 0.034828 0.037135 0.033944 0.034778 0.031956 0.026875 0.023881 0.022482 0.021746 0.016960
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.014775 0.018040 0.019193 0.021746 0.029084 0.032619 0.037184 0.039270 0.039982 0.036693 0.032962 0.027538 0.022408 0.017991 0.017328 0.014260
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.011683 0.014481 0.016616 0.019880 0.022924 0.028962 0.032299 0.032790 0.033797 0.033060 0.028790 0.023685 0.020249 0.017328 0.013205 0.011928
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.009572 0.011167 0.013794 0.015610 0.020077 0.023537 0.025599 0.027759 0.025452 0.025329 0.022924 0.018727 0.016567 0.015143 0.011609 0.009719
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Start placing envmaps. 154 Photons in scene.
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Border size: 2, cropSize: 768 576
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Added 6912 caches for camera rays
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Only 154 photons in scene for 1 envmaps. abort.
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Done placing 6912 of 1 envmapcaches.
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Start filling envmaps
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Envmap 0 after progressively filling
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.235378 1.035276 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.146287 0.643423 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Done filling envmaps with 1 additional samples.
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Finished. 154 Photons and 6912 Envmaps available.
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Start finalizing envmaps. 6912 available.
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Finalized envmaps. Erased 623, 6289 left. Build kD-Tree.
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] Done building kd-Tree for 6289 envmaps
+2015-01-26 16:14:32 DEBUG rend [MyPathTracerAndPhotonMapper] preprocessing done. try to write an envmap.
+2015-01-26 16:14:32 INFO  rend [RenderJob] Preprocessing time: 0.5130s
+2015-01-26 16:14:32 INFO  rend [SamplingIntegrator] Starting render job (768x576, 256 samples, 4 cores, SSE2 enabled) ..
+2015-01-26 16:32:53 INFO  rend [RenderJob] Render time: 18.3494m
+2015-01-26 16:32:53 DEBUG rend [HDRFilm] Developing film ..
+2015-01-26 16:32:53 INFO  rend [HDRFilm] Writing image to "E:\Kekse\projekte\Bachelorarbeit\Szenen\veach_bidir\bidir.exr" ..
+2015-01-26 16:32:53 DEBUG rend [Bitmap] Writing a 768x576 OpenEXR file
+2015-01-26 16:32:53 DEBUG rend [Thread] Thread "rend" has finished
+2015-01-26 16:39:07 DEBUG main [MyPathTracerAndPhotonMapper] traced_photon_paths = 300000, number_of_envmaps = 20000, fix_w_I = -0.010000, fix_w_E = -0.010000, useFixwE 0, sample_BSDF = 0, samples_for_envmaps 2000
+2015-01-26 16:39:08 DEBUG main [Thread] Spawning thread "rend"
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.009008 0.010922 0.014162 0.017500 0.020003 0.023169 0.024028 0.026556 0.026605 0.024740 0.022580 0.019390 0.017107 0.013352 0.011511 0.009891
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.010652 0.013548 0.017279 0.021157 0.024396 0.030631 0.031661 0.033478 0.035048 0.033330 0.028520 0.023341 0.019856 0.016346 0.013254 0.010529
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.014358 0.016469 0.019242 0.021942 0.027096 0.032889 0.034067 0.039663 0.040031 0.037405 0.033109 0.028716 0.022703 0.018261 0.015634 0.013818
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.017352 0.019021 0.021549 0.021697 0.026949 0.029771 0.035834 0.036325 0.038067 0.035564 0.031072 0.027489 0.021476 0.021451 0.020813 0.016567
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.020371 0.024740 0.027734 0.027955 0.023096 0.024936 0.027145 0.030311 0.028667 0.027464 0.024912 0.021009 0.027121 0.028446 0.025010 0.019929
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.023145 0.028962 0.033502 0.031637 0.024912 0.020641 0.020371 0.020469 0.020322 0.020199 0.019659 0.024225 0.028863 0.033379 0.027734 0.022359
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.024666 0.032398 0.037405 0.033919 0.027661 0.018776 0.015536 0.015561 0.012959 0.014113 0.020175 0.027783 0.034116 0.036276 0.032324 0.024642
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.025108 0.034484 0.038534 0.038607 0.030189 0.020739 0.014726 0.010308 0.009867 0.013916 0.019488 0.028446 0.038288 0.039957 0.035294 0.026409
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.026016 0.035662 0.039761 0.035637 0.029771 0.020224 0.012615 0.009744 0.010284 0.015143 0.019954 0.029600 0.036374 0.040595 0.035392 0.028618
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.025010 0.032324 0.037086 0.034999 0.027415 0.019267 0.014334 0.015094 0.014039 0.014898 0.020003 0.029207 0.034950 0.038583 0.033429 0.025771
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.022408 0.029330 0.032447 0.031907 0.023488 0.019709 0.018113 0.021574 0.021304 0.020249 0.018629 0.024887 0.031588 0.031612 0.030336 0.024077
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.019365 0.025059 0.026704 0.025378 0.023930 0.025255 0.028029 0.030483 0.029158 0.027636 0.024446 0.022850 0.026311 0.027931 0.026188 0.020298
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.016837 0.019267 0.021402 0.022359 0.025894 0.030631 0.033576 0.038411 0.039466 0.035711 0.029502 0.025035 0.023120 0.022261 0.021353 0.018678
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.013646 0.016272 0.019365 0.021697 0.028642 0.032030 0.037945 0.039834 0.038902 0.037036 0.033674 0.026237 0.022973 0.018972 0.017352 0.013450
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.011266 0.013794 0.017131 0.020396 0.025992 0.028618 0.031784 0.033183 0.034656 0.032177 0.028814 0.026065 0.020666 0.016420 0.015143 0.011339
+2015-01-26 16:39:08 DEBUG rend [MyPathTracerAndPhotonMapper] Solid angles: 0.009597 0.011462 0.013720 0.017082 0.020445 0.021893 0.025329 0.026998 0.026924 0.024814 0.022040 0.019439 0.016493 0.013106 0.011536 0.009008
+2015-01-26 16:39:17 DEBUG rend [MyPathTracerAndPhotonMapper] Start placing envmaps. 1920826 Photons in scene.
+2015-01-26 16:39:17 DEBUG rend [MyPathTracerAndPhotonMapper] Border size: 2, cropSize: 768 576
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Added 6910 caches for camera rays
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Done placing 20000 of 20000 envmapcaches.
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Start filling envmaps
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Envmap 0 after progressively filling
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 223.894974 275.806671 201.919983 157.891281 38.084553 44.384403 76.221962 0.614512 | 3.135285 5.863764 7.229071 2.901772 17.177004 0.167518 0.025564 0.000000
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 320.870758 1215.126343 1288.714233 1465.291382 266.226349 38.164974 46.501373 31.298256 | 163.327469 16.722286 14.638054 13.446862 37.728336 147.731964 91.973412 0.000000
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 93.016220 886.609253 1767.237671 3088.882568 977.195984 318.042358 301.800995 427.340118 | 440.118225 179.612473 77.861916 200.512650 46.062023 292.293152 188.167542 8.792285
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 586.192200 1136.997681 991.594421 1242.449585 1555.736694 747.537415 594.937683 256.835083 | 740.402100 325.801941 480.632080 205.525070 70.244370 113.075180 6.674475 2.623941
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 442.434387 3153.508057 2173.068848 504.783997 1114.988770 1045.024048 630.582642 205.973083 | 351.842499 258.456940 301.909424 198.991913 50.313999 178.034744 135.773468 1020.015686
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 788.080933 1769.305054 2054.558105 731.290161 288.137634 1127.601685 621.397949 254.792572 | 430.577423 528.681946 259.008057 144.856720 202.561325 242.281555 138.191650 422.930939
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 1175.193726 1037.388672 2070.576172 18953.113281 30436.058594 975.148499 325.529144 79.810402 | 351.282410 720.967896 720.313416 923.506958 307.363464 236.948227 115.786926 235.073685
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 438.229706 607.807983 8618.279297 43981.109375 34594.800781 1265.880493 621.851746 72.544762 | 113.527130 337.743164 1435.314697 1729.152832 137.952942 84.736984 38.472546 4.913695
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 229.745377 851.464294 17815.542969 55472.093750 945.915344 689.245605 94.576935 148.827545 | 400.275055 573.831726 252.951889 754.789185 615.868896 498.900177 158.175278 82.435448
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 1199.127686 743.154236 2759.523926 2949.249023 836.770020 307.673767 134.233444 85.726944 | 36.228432 46.040970 74.394142 588.958862 892.621460 580.304932 127.056664 167.512939
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 2891.222168 1446.026611 394.309143 259.816650 547.110840 585.126221 204.673813 45.004498 | 0.241319 1.032430 24.206211 54.971268 21.354303 70.280273 250.754440 185.080902
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 480.147217 1797.642700 125.875008 463.007019 558.305176 607.814453 265.167267 7.276528 | 0.046087 0.000000 0.022195 1.423917 6.782036 14.810866 39.164440 21.914259
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 100.363708 271.390411 287.410889 289.194092 304.291718 403.166473 99.025589 0.000000 | 0.000000 0.000000 0.000000 0.000000 8.756399 25.937572 14.363488 4.698107
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 537.276978 1191.215576 275.148102 311.747589 220.398071 35.067616 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.297110 1.830339 63.901993
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 60.930374 213.000305 126.165558 88.301025 70.061234 3.804275 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 20.142113
+2015-01-26 16:39:18 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 50.016418 66.202667 49.928165 34.707596 14.122303 0.000000 0.000000 0.000000 | 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Envmap 10000 after progressively filling
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.269237 3.397362 9.166095 23.535357 20.158731 1.032457 1.050759 0.263170 | 2.955668 0.772244 2.172220 2.345320 8.923082 1.159081 0.007312 0.000893
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.312951 28.007761 60.989841 77.245323 97.790161 24.128288 46.689598 27.254065 | 56.045574 22.900707 33.604950 36.045792 73.173332 61.581528 2.048733 0.247657
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 21.325998 58.241379 21.486530 4.537803 44.837048 28.455891 398.222443 423.862701 | 111.461449 77.650932 11.212328 98.193848 774.853394 357.933319 3.870974 1.212695
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 7.656960 18.564737 71.678558 94.458511 229.542313 142.898468 209.755630 118.161072 | 183.964447 773.480347 355.145325 50.823452 202.115372 34.919014 6.866070 1.702023
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 13.737565 57.002045 873.744934 434.232574 432.213287 295.355377 189.385498 132.449661 | 97.825005 313.753479 1495.241211 637.500061 63.193977 190.495926 11.135354 0.629647
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 18.120583 1374.535034 1501.477905 494.575195 196.151825 759.184692 656.147583 119.423599 | 50.994099 17.735073 122.685463 57.132179 134.571716 242.897110 4.438265 0.469397
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 28.250517 579.719604 729.668213 4657.826172 1461.164917 2257.452393 2298.542480 746.236938 | 49.875980 43.243187 45.726402 71.794495 179.432648 54.624641 8.442139 0.363494
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 23.653408 245.824997 334.088135 1996.041748 1983.629272 1700.448364 7198.265137 2746.731934 | 586.872437 32.605511 135.673279 495.623871 169.958847 41.346634 12.279255 6.770440
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 7.994736 34.365196 251.694046 250.937607 917.736877 3229.798584 2597.127441 2704.135986 | 960.542603 813.192200 342.403473 261.144836 146.067276 38.589401 19.484678 3.366572
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 8.901101 42.956879 111.669945 94.879524 40.695103 3891.835938 6754.276855 6757.187988 | 4337.876465 3245.102051 593.540344 87.443413 95.374359 124.408409 35.614941 5.760040
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 14.826275 18.291971 53.059155 73.208069 62.144226 1271.638916 4392.207031 9256.810547 | 8400.455078 2828.393799 715.310242 229.223282 225.887589 63.956863 11.146731 6.296296
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 63.528111 7.380631 21.650776 52.192524 41.897003 77.927055 150.756805 1689.592651 | 1963.803589 704.783203 517.609802 189.001953 150.379654 30.713520 3.470354 0.000000
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 303.181732 7.855589 52.220783 32.045387 30.249380 67.805504 178.078339 1069.328003 | 1468.588257 123.549438 26.862074 9.628613 5.105975 114.723602 6.218609 0.002706
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 164.879501 36.523365 11.888043 10.944848 24.537306 103.314896 622.113892 196.881470 | 66.017357 61.705647 4.050412 0.679990 1.313225 14.598734 0.936427 0.000159
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 242.627182 863.444153 319.297302 3.053407 7.467600 47.504372 165.407318 262.737885 | 160.165451 6.086221 2.978898 0.705933 0.287800 0.000000 0.000000 0.000000
+2015-01-26 16:40:23 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 51.875515 1201.002197 480.736603 6.633296 24.838251 25.678162 32.599072 86.591591 | 87.105064 0.101887 1.578025 0.111668 0.000000 0.000000 0.000000 0.000000
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Done filling envmaps with 2000 additional samples.
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Finished. 1920826 Photons and 20000 Envmaps available.
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Start finalizing envmaps. 20000 available.
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Envmap 10000 before finalizing, sum: 128565.070850, min: 1000.000000,
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 83.844254 192.774673 155.429459 61.556450 31.794531 21.754925 20.563982 28.699759 | 27.315187 14.855222 9.028126 13.265194 17.924173 13.805140 4.267241 3.455574
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 10.237841 25.635124 37.842663 48.646000 48.841305 56.794895 96.355240 104.776794 | 65.992188 34.721996 28.627766 84.748695 157.195786 118.913116 31.244741 2.100918
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 16.792133 34.523369 43.444847 59.637936 77.420692 119.860863 207.678696 218.881500 | 179.418076 173.592117 128.580627 175.167770 296.600952 216.649170 53.128487 4.751800
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 16.148392 87.106995 178.577347 201.881165 194.347855 197.654419 213.530075 198.100220 | 242.839386 416.918121 450.574646 320.856506 246.260254 156.721939 42.561913 5.600545
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 101.064995 399.256653 600.368469 470.360321 345.658386 345.023956 280.289154 167.515671 | 173.901459 421.022919 608.644043 418.581238 185.494598 113.391617 45.586800 5.855572
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 221.511383 716.011353 1167.483765 1190.904175 920.234375 889.266174 799.322388 392.811279 | 125.586182 176.310089 299.293915 246.576660 161.125854 125.128357 49.359669 6.909196
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 186.519745 559.548462 1323.491943 2000.597046 1811.564331 1968.917847 2264.760010 1369.148560 | 373.168335 85.067741 95.799690 150.368607 151.039368 92.748978 29.291466 9.238155
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 80.631866 246.535004 831.603699 1612.336914 1905.082275 2713.416260 3526.024170 2460.252197 | 889.613159 292.933289 222.799133 248.329254 176.933090 66.857338 18.634308 10.661206
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 29.616489 107.044670 303.037567 624.658569 1397.767212 2944.397461 4078.604248 3488.563477 | 2094.247070 1129.252563 552.343140 261.387634 153.951645 70.637444 27.245287 10.870924
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 15.062519 52.866135 106.791359 163.573364 932.597290 2883.086426 4922.263184 5592.829590 | 4480.038086 2534.070068 955.414551 258.625519 133.876572 85.455681 36.016792 11.553150
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 19.339851 32.210232 53.705475 64.580994 451.268127 1807.650635 4053.270996 5794.552246 | 5173.265625 2803.606445 964.069092 294.317749 150.811630 82.811211 26.509113 12.510362
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 58.583519 42.216461 34.231895 46.502880 128.582016 502.411499 1559.013672 2879.943848 | 2853.758301 1518.566284 533.321838 221.428543 120.029320 64.767120 18.438663 30.123018
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 108.072678 68.248871 28.925259 32.460609 43.621700 118.104149 412.502380 884.142883 | 935.794617 473.097351 148.330978 72.197975 50.469269 45.516731 19.278315 53.226639
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 168.467819 197.472183 111.995216 37.253922 34.531956 144.899033 326.449738 425.009949 | 343.778290 144.051514 21.289066 4.334442 10.728502 18.997114 10.006688 55.229088
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 273.027039 485.128540 328.158600 77.681252 23.519268 93.615120 187.750366 192.304916 | 114.364716 39.562466 6.209748 1.117632 1.286244 2.001420 1.029484 43.934132
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 247.633865 510.892212 368.035889 90.434380 18.397135 31.796583 62.461868 90.084755 | 69.869308 22.485182 1.684448 1.504202 1.428465 0.721022 0.073412 21.666035
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Envmap 10000 after finalizing, newsum: 1.005301, sum: 128565.070850, newersum: 1.000000
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000649 0.001492 0.001203 0.000476 0.000246 0.000199 0.000199 0.000222 | 0.000211 0.000199 0.000199 0.000199 0.000199 0.000199 0.000199 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000199 0.000199 0.000293 0.000376 0.000378 0.000439 0.000746 0.000811 | 0.000511 0.000269 0.000221 0.000656 0.001216 0.000920 0.000242 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000199 0.000267 0.000336 0.000461 0.000599 0.000927 0.001607 0.001694 | 0.001388 0.001343 0.000995 0.001355 0.002295 0.001676 0.000411 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000199 0.000674 0.001382 0.001562 0.001504 0.001529 0.001652 0.001533 | 0.001879 0.003226 0.003486 0.002483 0.001905 0.001213 0.000329 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000782 0.003089 0.004645 0.003639 0.002674 0.002670 0.002169 0.001296 | 0.001346 0.003258 0.004709 0.003239 0.001435 0.000877 0.000353 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.001714 0.005540 0.009033 0.009214 0.007120 0.006880 0.006184 0.003039 | 0.000972 0.001364 0.002316 0.001908 0.001247 0.000968 0.000382 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.001443 0.004329 0.010240 0.015479 0.014016 0.015234 0.017523 0.010593 | 0.002887 0.000658 0.000741 0.001163 0.001169 0.000718 0.000227 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000624 0.001907 0.006434 0.012475 0.014740 0.020994 0.027281 0.019035 | 0.006883 0.002266 0.001724 0.001921 0.001369 0.000517 0.000199 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000229 0.000828 0.002345 0.004833 0.010815 0.022781 0.031557 0.026992 | 0.016204 0.008737 0.004274 0.002022 0.001191 0.000547 0.000211 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000199 0.000409 0.000826 0.001266 0.007216 0.022307 0.038084 0.043273 | 0.034663 0.019606 0.007392 0.002001 0.001036 0.000661 0.000279 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000199 0.000249 0.000416 0.000500 0.003492 0.013986 0.031361 0.044833 | 0.040026 0.021692 0.007459 0.002277 0.001167 0.000641 0.000205 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000453 0.000327 0.000265 0.000360 0.000995 0.003887 0.012062 0.022283 | 0.022080 0.011749 0.004126 0.001713 0.000929 0.000501 0.000199 0.000233
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.000836 0.000528 0.000224 0.000251 0.000338 0.000914 0.003192 0.006841 | 0.007240 0.003660 0.001148 0.000559 0.000390 0.000352 0.000199 0.000412
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.001303 0.001528 0.000867 0.000288 0.000267 0.001121 0.002526 0.003288 | 0.002660 0.001115 0.000199 0.000199 0.000199 0.000199 0.000199 0.000427
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.002112 0.003754 0.002539 0.000601 0.000199 0.000724 0.001453 0.001488 | 0.000885 0.000306 0.000199 0.000199 0.000199 0.000199 0.000199 0.000340
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.001916 0.003953 0.002848 0.000700 0.000199 0.000246 0.000483 0.000697 | 0.000541 0.000199 0.000199 0.000199 0.000199 0.000199 0.000199 0.000199
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] m_envmaps[i].getEnvmap_pdf 10000 after adapting to solid angle, newsum: 1.005301, sum: 128565.070850, newersum: 1.000000
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.072019 0.136562 0.084918 0.027216 0.012298 0.008587 0.008280 0.008362 | 0.007944 0.008041 0.008811 0.010260 0.011630 0.014900 0.017283 0.020114
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.018677 0.014684 0.016945 0.017790 0.015490 0.014346 0.023547 0.024215 | 0.014568 0.008060 0.007766 0.028093 0.061254 0.056286 0.018240 0.018895
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.013856 0.016219 0.017469 0.021029 0.022107 0.028198 0.047168 0.042698 | 0.034678 0.035908 0.030047 0.047196 0.101082 0.091796 0.026292 0.014397
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.011465 0.035432 0.064117 0.071992 0.055798 0.051367 0.046105 0.042195 | 0.049357 0.090703 0.112195 0.090310 0.088721 0.056527 0.015822 0.012009
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.038385 0.124863 0.167487 0.130181 0.115797 0.107052 0.079890 0.042759 | 0.046936 0.118609 0.189033 0.154151 0.052919 0.030842 0.014103 0.009982
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.074050 0.191284 0.269624 0.291249 0.285807 0.333332 0.303588 0.148477 | 0.047814 0.067533 0.117789 0.078755 0.043192 0.029004 0.013770 0.008898
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.058506 0.133630 0.273765 0.456344 0.506723 0.811348 1.127871 0.680773 | 0.222798 0.046638 0.036740 0.041875 0.034254 0.019782 0.007011 0.008073
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.024847 0.055315 0.166977 0.323123 0.488258 1.012280 1.852572 1.846594 | 0.697616 0.162865 0.088457 0.067544 0.035754 0.012946 0.005637 0.007533
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.008808 0.023224 0.058969 0.135618 0.363258 1.126446 2.501437 2.770111 | 1.575633 0.576962 0.214170 0.068325 0.032747 0.013463 0.005956 0.006952
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.007955 0.012654 0.022280 0.036160 0.263198 1.157788 2.657009 2.866801 | 2.469032 1.316046 0.369552 0.068512 0.029637 0.017137 0.008336 0.007720
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.008878 0.008497 0.012806 0.015660 0.148650 0.709643 1.731372 2.078127 | 1.878824 1.071283 0.400412 0.091500 0.036940 0.020268 0.006761 0.008263
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.023407 0.013035 0.009918 0.014178 0.041574 0.153917 0.430353 0.730977 | 0.757254 0.425144 0.168799 0.074976 0.035297 0.017941 0.007597 0.011482
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.049663 0.027407 0.010457 0.011233 0.013034 0.029833 0.095056 0.178094 | 0.183458 0.102501 0.038902 0.022313 0.016890 0.015820 0.009317 0.022049
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.095518 0.093893 0.044747 0.013285 0.009328 0.035002 0.066565 0.082551 | 0.068374 0.030093 0.005908 0.007583 0.008660 0.010486 0.011465 0.031771
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.187514 0.272121 0.148207 0.029468 0.007654 0.025310 0.045704 0.044839 | 0.025533 0.009513 0.006904 0.007633 0.009627 0.012116 0.013137 0.029978
+2015-01-26 16:41:30 DEBUG rend [MyPathTracerAndPhotonMapper] Values: 0.199652 0.344868 0.207548 0.040961 0.009731 0.011237 0.019080 0.025817 | 0.020078 0.008018 0.009026 0.010235 0.012062 0.015179 0.017246 0.022087
+2015-01-26 16:41:31 DEBUG rend [MyPathTracerAndPhotonMapper] Finalized envmaps. Erased 0, 20000 left. Build kD-Tree.
+2015-01-26 16:41:31 DEBUG rend [MyPathTracerAndPhotonMapper] Done building kd-Tree for 20000 envmaps
+2015-01-26 16:41:31 DEBUG rend [MyPathTracerAndPhotonMapper] preprocessing done. try to write an envmap.
+2015-01-26 16:41:31 INFO  rend [RenderJob] Preprocessing time: 2.3779m
+2015-01-26 16:41:31 INFO  rend [SamplingIntegrator] Starting render job (768x576, 64 samples, 4 cores, SSE2 enabled) ..
+2015-01-26 17:09:28 INFO  rend [RenderJob] Render time: 30.3375m
+2015-01-26 17:09:28 DEBUG rend [HDRFilm] Developing film ..
+2015-01-26 17:09:28 INFO  rend [HDRFilm] Writing image to "E:\Kekse\projekte\Bachelorarbeit\Szenen\veach_bidir\bidir.exr" ..
+2015-01-26 17:09:28 DEBUG rend [Bitmap] Writing a 768x576 OpenEXR file
+2015-01-26 17:09:28 DEBUG rend [Thread] Thread "rend" has finished
+2015-01-26 17:13:42 DEBUG main [Bitmap] Writing a 768x576 PNG file
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=AreaLightShader, bsdf=SmoothDielectricShader, ds"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=AreaLightShader, bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], ds"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=AreaLightShader, bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], emitter=AreaLightShader, ds"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=AreaLightShader, bsdf=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], ds"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=SmoothDiffuseShader[ConstantSpectrumTextureShader], bsdf=SmoothDielectricShader, ds"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=SmoothDiffuseShader[ConstantSpectrumTextureShader], bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], ds"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=SmoothDiffuseShader[ConstantSpectrumTextureShader], bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], emitter=AreaLightShader, ds"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=SmoothDiffuseShader[ConstantSpectrumTextureShader], bsdf=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], ds"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], bsdf=SmoothDielectricShader, ds"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], ds"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], bsdf=SmoothDiffuseShader[ConstantSpectrumTextureShader], emitter=AreaLightShader, ds"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "vpl=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], bsdf=WardShader[ConstantSpectrumTextureShader, ConstantSpectrumTextureShader, ConstantFloatTextureShader, ConstantFloatTextureShader], ds"
+2015-01-26 17:13:48 DEBUG prvw [GLProgram] Freeing GPU program "Directional shadow map generator"
+2015-01-26 17:13:48 DEBUG prvw [GLProgram] Freeing GPU program "Paraboloid shadow map generator"
+2015-01-26 17:13:48 DEBUG prvw [GLProgram] Freeing GPU program "Cube/Hemicube shadow map generator (5/6 pass version)"
+2015-01-26 17:13:48 DEBUG prvw [GLProgram] Freeing GPU program "Cube shadow map generator (1 pass version)"
+2015-01-26 17:13:48 DEBUG prvw [GLProgram] Freeing GPU program "Hemicube shadow map generator (1 pass version)"
+2015-01-26 17:13:48 DEBUG prvw [GLProgram] Freeing GPU program "Accumulation program"
+2015-01-26 17:13:48 DEBUG prvw [WGLRenderer] Shutting down WGL Renderer
+2015-01-26 17:13:48 DEBUG prvw [WGLDevice] Shutting down WGL device
+2015-01-26 17:13:48 DEBUG prvw [Thread] Thread "prvw" has finished
+2015-01-26 17:13:48 DEBUG wrk2 [Thread] Thread "wrk2" has finished
+2015-01-26 17:13:48 DEBUG wrk1 [Thread] Thread "wrk1" has finished
+2015-01-26 17:13:48 DEBUG wrk0 [Thread] Thread "wrk0" has finished
+2015-01-26 17:13:48 DEBUG wrk3 [Thread] Thread "wrk3" has finished
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "Log-luminance program"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "Downsampling program"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "Tonemapper [Reinhard et al. 2002]"
+2015-01-26 17:13:48 DEBUG main [GLProgram] Freeing GPU program "Tonemapper [Gamma]"
+2015-01-26 17:13:48 DEBUG main [WGLSession] Shutting down WGL session
+2015-01-26 17:13:48 INFO  main [statistics.cpp:142] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins\area.dll [Area light]
+    -  plugins\bdpt.dll [Bidirectional path tracer]
+    -  plugins\dielectric.dll [Smooth dielectric BSDF]
+    -  plugins\diffuse.dll [Smooth diffuse BRDF]
+    -  plugins\gaussian.dll [Gaussian reconstruction filter]
+    -  plugins\halton.dll [Halton QMC sampler]
+    -  plugins\hdrfilm.dll [High dynamic range film]
+    -  plugins\homogeneous.dll [Homogeneous medium]
+    -  plugins\isotropic.dll [Isotropic phase function]
+    -  plugins\ldsampler.dll [Low discrepancy sampler]
+    -  plugins\mypathtracerandphotonmapper.dll [My Path Tracer and Photon Mapper]
+    -  plugins\perspective.dll [Perspective camera]
+    -  plugins\serialized.dll [Serialized mesh loader]
+    -  plugins\ward.dll [Anisotropic Ward BRDF]
+
+  * General :
+    -  Normal rays traced : 499.528 M
+    -  Shadow rays traced : 224.107 M
+------------------------------------------------------------

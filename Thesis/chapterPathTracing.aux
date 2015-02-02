@@ -1,0 +1,97 @@
+\relax 
+\providecommand{\transparent@use}[1]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Path Tracing}{15}{chapter.3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chaper:PathTracing}{{3}{15}{Path Tracing\relax }{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Path Space}{15}{section.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Rendering Equation over Path Space}{15}{section.3.2}}
+\newlabel{mcf}{{\relax 3.1}{16}{Rendering Equation over Path Space\relax }{equation.3.2.1}{}}
+\newlabel{path integral}{{\relax 3.2}{16}{Rendering Equation over Path Space\relax }{equation.3.2.2}{}}
+\newlabel{path integral estimator}{{\relax 3.3}{16}{Rendering Equation over Path Space\relax }{equation.3.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces A possible light transport path $x_0x_1x_2x_3x_4$ with all factors for the measurement contribution function.}}{17}{figure.3.1}}
+\newlabel{transportpath}{{\relax 3.1}{17}{A possible light transport path $x_0x_1x_2x_3x_4$ with all factors for the measurement contribution function}{figure.3.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Importance Sampling Options}{17}{section.3.3}}
+\newlabel{importance_sampling_options}{{3.3}{17}{Importance Sampling Options\relax }{section.3.3}{}}
+\newlabel{scattering solid}{{\relax 3.4}{17}{Importance Sampling Options\relax }{equation.3.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Cosine to normal}{18}{subsection.3.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}BSDF sampling}{18}{subsection.3.3.2}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces basic path tracing with BSDF only}}{18}{algorithm.1}}
+\newlabel{weightPath_BSDF}{{1}{18}{BSDF sampling\relax }{algorithm.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces On the upper right, where the surface is highly specular and the light sources are large, BSDF sampling performs rather well.\newline  On the lower left as well as the floor and wall, where the surface is highly diffuse and the light sources are small, BSDF sampling produces a lot of noise.}}{19}{figure.3.2}}
+\newlabel{BSDF_veach}{{\relax 3.2}{19}{On the upper right, where the surface is highly specular and the light sources are large, BSDF sampling performs rather well.\newline On the lower left as well as the floor and wall, where the surface is highly diffuse and the light sources are small, BSDF sampling produces a lot of noise}{figure.3.2}{}}
+\citation{veachdiss}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces BSDF sampling with 1, 4, 16, 64 and 1024 samples per pixel, and a perfect image on the bottom right (created with another algorithm).\newline  Note how even 1024 samples per pixel still produce some noise compared to the exact solution.}}{20}{figure.3.3}}
+\newlabel{BSDFsampling_spp}{{\relax 3.3}{20}{BSDF sampling with 1, 4, 16, 64 and 1024 samples per pixel, and a perfect image on the bottom right (created with another algorithm).\newline Note how even 1024 samples per pixel still produce some noise compared to the exact solution}{figure.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Next Event Estimation}{20}{subsection.3.3.3}}
+\citation{veachdiss}
+\citation{mitsuba}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Left: BSDF sampling (good with specular surfaces and large light sources)\newline  Center: NEE (good with small light sources or diffuse surfaces)\newline  Right: MIS of BSDF sampling and NEE}}{21}{figure.3.4}}
+\newlabel{veach_mis}{{\relax 3.4}{21}{Left: BSDF sampling (good with specular surfaces and large light sources)\newline Center: NEE (good with small light sources or diffuse surfaces)\newline Right: MIS of BSDF sampling and NEE\relax }{figure.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Irradiance Sampling}{21}{subsection.3.3.4}}
+\citation{veachdiss}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Left: NEE only, the caustics are missing. Right: Reference with caustics.}}{22}{figure.3.5}}
+\newlabel{nee_caustics}{{\relax 3.5}{22}{Left: NEE only, the caustics are missing. Right: Reference with caustics}{figure.3.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Path contribution}{22}{section.3.4}}
+\newlabel{pdftrans}{{\relax 3.7}{22}{Path contribution\relax }{equation.3.4.7}{}}
+\newlabel{geoweg}{{\relax 3.8}{23}{Path contribution\relax }{equation.3.4.8}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Assemble a path's energy}}{23}{algorithm.2}}
+\newlabel{assembleenergy}{{2}{23}{Path contribution\relax }{algorithm.2}{}}
+\citation{survey}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}The Algorithm}{24}{section.3.5}}
+\newlabel{pathtracingalgorithm}{{3.5}{24}{The Algorithm\relax }{section.3.5}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Path tracing with BSDF sampling and NEE}}{24}{algorithm.3}}
+\newlabel{ptBSDF}{{3}{24}{The Algorithm\relax }{algorithm.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Russian Roulette}{25}{section.3.6}}
+\newlabel{chapterRussianRoulette}{{3.6}{25}{Russian Roulette\relax }{section.3.6}{}}
+\@setckpt{chapterPathTracing}{
+\setcounter{page}{26}
+\setcounter{equation}{8}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{3}
+\setcounter{section}{6}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{5}
+\setcounter{table}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{25}
+\setcounter{btxromaniannumeral}{0}
+\setcounter{parentequation}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{3}
+\setcounter{ALG@line}{30}
+\setcounter{ALG@rem}{0}
+\setcounter{ALG@nested}{0}
+\setcounter{ALG@Lnr}{2}
+\setcounter{ALG@blocknr}{10}
+\setcounter{ALG@storecount}{0}
+\setcounter{ALG@tmpcounter}{0}
+\setcounter{blindtext}{1}
+\setcounter{Blindtext}{5}
+\setcounter{blind@countparstart}{0}
+\setcounter{blindlist}{0}
+\setcounter{blindlistlevel}{0}
+\setcounter{blindlist@level}{0}
+\setcounter{blind@listcount}{0}
+\setcounter{blind@levelcount}{0}
+\setcounter{blind@randomcount}{0}
+\setcounter{blind@randommax}{0}
+\setcounter{blind@pangramcount}{0}
+\setcounter{blind@pangrammax}{0}
+\setcounter{section@level}{1}
+}

@@ -1,0 +1,10 @@
+200k Photon paths
+20k IRCs
+2k photons per cache
+
+Max Path Depth 30
+RR Starting Depth 30
+
+Release build
+
+Render time = Preprocessing time + actual rendering time

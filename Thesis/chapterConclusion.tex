@@ -1,0 +1,30 @@
+\chapter{Conclusion and Future Work}
+\label{chapter:Conclusion}
+
+This thesis introduced caches for incident radiance as a possible sampling technique for Monte Carlo path tracing. A photon map was used to approximate incident radiance which was then stored in caches, so the photon map could be discarded before rendering. 
+
+We showed that IRCs combined with NEE are a better choice for rendering caustics of all sorts in comparison to conventional path tracing with BSDF sampling and NEE. However, the advantages are restricted to caustics and ordinary diffuse surfaces; for direct lighting and more specular surfaces BSDF sampling and NEE produce better results.
+
+Investigating the rendering times revealed that the preprocessing of the IRCs only consumes a small amount of the additional render time needed for NEE and IRC sampling. The rest of the time is distibuted about evenly between querying the k-d tree for the closest cache and sampling a texel and pdf value from it.\\
+By decreasing the number of samples per pixel, we were able to generate images using NEE and IRC sampling that showed approximately the same quality and computation time as images rendered with NEE and BSDF sampling and a higher sample count. We also believe that the relative overhead for including IRCs decreases for a more complex geometry where more time is spent computing ray intersections.
+
+
+%STIMMT NICHT MEHR For low sample counts per pixel, preprocessing the IRCs consumes a major part of the total rendering time. On the other hand, our test scenes showed that there soon comes a point where further increasing the number of photons (total or per cache) or caches does not further improve the quality. So as the number of samples per pixel increases, the share of computation time that goes towards preprocessing the caches decreases fast.\\
+
+\null
+We would like to make a few concluding suggestions for future improvement.
+
+First of all, our implementation was rarely optimized. The preprocessing of the caches is highly suited for parallelization, we only neglected that because our test scenes were rather simple and therefore the benefit would have been minimal. Plus, the overall structure of our code was designed so that new features could be integrated and tested quickly, it was never optimized for a faster computation time.
+
+Combining NEE, IRC sampling and BSDF sampling together could lead to a more robust algorithm that inherits the benefits from NEE and IRC sampling for caustics on smooth surfaces as well as the strengths of NEE and BSDF sampling for small light sources and more specular surfaces. The computation time should stay approximately the same as with NEE and IRC sampling, and the only modification necessary would be new MIS weights that are able to combine the one-sample model for BSDF and IRC sampling with the many-sample model for NEE and either BSDF or IRC sampling.
+
+\newpage
+Another option to improve the performance of NEE and IRC sampling on specular surfaces might be to include the BSDF when the cache's pdfs are created. A similar approach was already taken with Importance Driven Path Tracing \cite{idpt}, where each photon's energy was weighted with the BSDF for the outgoing direction and the incident direction of the current ray. This was possible because the pdfs were created as soon as a surface was hit, so information on the outgoing direction was available. Our caches are created before the image is rendered, so this method cannot be adopted as it stands.
+
+%STIMMT, ist aber irrelevant: The relative amount of preprocessing time can be greatly reduced if more than one image of the same scene is rendered. As long as the geometry and lighting are static, all caches are valid for all new camera positions. Depending on the complexity of the scene, it might be wise to add some new camera caches for each new point of view, but we can skip the photon mapping step completely and reuse all of the old caches placed according to the photon distribution.
+
+If necessary, the quality of the caches might be improved by filling them progressively with information that has to be computed anyway in order to render the image.\\
+Progressive photon mapping \cite{ppm} already investigated how several photon tracing passes can iteratively increase the accuracy of an image rendered with photon mapping. Similarly, the pdf in the caches could be improved with information from multiple photon tracing passes.\\
+It might even be possible to include the estimated incident radiance that is computed during path tracing. Thus the quality of the pdf in each texel could be increased progressively. However, the resolution of the environment maps used in the IRCs remains a limiting factor.
+
+The concept of IRCs could also be used in a bidirectional path tracing algorithm. In addition to caching incident radiance, it should be possible to add analogous caches for importance from camera rays (instead of radiance from photon rays). Those caches could be employed to sample light paths, while the IRCs we introduced here could be used to sample camera paths.

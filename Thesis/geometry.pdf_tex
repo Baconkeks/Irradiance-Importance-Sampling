@@ -1,0 +1,63 @@
+%% Creator: Inkscape 0.48.3.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'geometry.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1315.79042969bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.70946772)%
+    \put(0,0){\includegraphics[width=\unitlength]{geometry.pdf}}%
+    \put(0.60554548,0.35593897){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$N(x)$}}}%
+    \put(0.57246487,0.14952366){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$x$}}}%
+    \put(0.19633894,0.63232516){\color[rgb]{0.63921569,0.00392157,0.53333333}\makebox(0,0)[lb]{\smash{$dA(x')$}}}%
+    \put(0.27203107,0.54278704){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$x'$}}}%
+    \put(0.41490353,0.55290447){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$N(x')$}}}%
+    \put(0.54244655,0.27212351){\color[rgb]{0.70980392,0,0}\makebox(0,0)[lb]{\smash{$\omega$}}}%
+    \put(0.82939566,0.37055418){\color[rgb]{0.00392157,0.15686275,0.8745098}\makebox(0,0)[lb]{\smash{$\mathcal{S}^2$}}}%
+    \put(0.38247733,0.11732671){\color[rgb]{0.15294118,0.49019608,0.07843137}\makebox(0,0)[lb]{\smash{$d\sigma^\bot(\omega)$}}}%
+    \put(0.46194464,0.38408146){\color[rgb]{0.70980392,0,0}\makebox(0,0)[lb]{\smash{$d\sigma(\omega)$}}}%
+  \end{picture}%
+\endgroup%

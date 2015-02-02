@@ -1,0 +1,7 @@
+Empty Cornell Box
+IRC only, no BSDF sampling or NEE
+150k photon paths (~750k photons)
+20k caches
+500 photons per cache
+64 samples per pixel
+512x512 pixel

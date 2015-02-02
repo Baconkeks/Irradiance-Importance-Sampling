@@ -1,0 +1,53 @@
+\BOOKMARK [0][]{Contents.0}{Contents}{}% 1
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 2
+\BOOKMARK [0][]{chapter.2}{2 Basics}{}% 3
+\BOOKMARK [1][-]{section.2.1}{2.1 Mathematical Basics}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Some Probability Theory}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Monte Carlo Integration}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Multiple Importance Sampling}{section.2.1}% 7
+\BOOKMARK [1][-]{section.2.2}{2.2 Physically based light transport}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Assumptions}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Notations}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Radiometry}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 The bidirectional scattering distribution function \(BSDF\)}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 The Rendering Equation}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Three-point form of the rendering equation}{section.2.2}% 14
+\BOOKMARK [0][]{chapter.3}{3 Path Tracing}{}% 15
+\BOOKMARK [1][-]{section.3.1}{3.1 Path Space}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{3.2 Rendering Equation over Path Space}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{3.3 Importance Sampling Options}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Cosine to normal}{section.3.3}% 19
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 BSDF sampling}{section.3.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Next Event Estimation}{section.3.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.4}{3.3.4 Irradiance Sampling}{section.3.3}% 22
+\BOOKMARK [1][-]{section.3.4}{3.4 Path contribution}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.5}{3.5 The Algorithm}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.6}{3.6 Russian Roulette}{chapter.3}% 25
+\BOOKMARK [0][]{chapter.4}{4 Caching incident radiance}{}% 26
+\BOOKMARK [1][-]{section.4.1}{4.1 Environment Map Parameterization}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.2}{4.2 Creating Caches}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Modified Photon Mapping}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Placing Caches}{section.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Filling a Cache}{section.4.2}% 31
+\BOOKMARK [3][-]{subsubsection.4.2.3.1}{4.2.3.1 Creating a useful probability density function}{subsection.4.2.3}% 32
+\BOOKMARK [3][-]{subsubsection.4.2.3.2}{4.2.3.2 Convert probabilities to solid angle}{subsection.4.2.3}% 33
+\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Storing Cache}{section.4.2}% 34
+\BOOKMARK [0][]{chapter.5}{5 Rendering}{}% 35
+\BOOKMARK [1][-]{section.5.1}{5.1 Sampling Caches}{chapter.5}% 36
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Path Extension}{section.5.1}% 37
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Computing probabilities for given directions}{section.5.1}% 38
+\BOOKMARK [1][-]{section.5.2}{5.2 Combining BSDFs and Caches}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Multiple Importance Sampling of BSDFs and IRCs}{section.5.2}% 40
+\BOOKMARK [1][-]{section.5.3}{5.3 Combining NEE and Caches}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.4}{5.4 Evaluation}{chapter.5}% 42
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Comparison of Different Sampling Strategies}{section.5.4}% 43
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Different Cache Configurations}{section.5.4}% 44
+\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Durations}{section.5.4}% 45
+\BOOKMARK [0][]{chapter.6}{6 Related Work}{}% 46
+\BOOKMARK [1][-]{section.6.1}{6.1 Photon Mapping}{chapter.6}% 47
+\BOOKMARK [1][-]{section.6.2}{6.2 Final Gathering}{chapter.6}% 48
+\BOOKMARK [1][-]{section.6.3}{6.3 Progressive Photon Mapping}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.4}{6.4 Irradiance Caching}{chapter.6}% 50
+\BOOKMARK [1][-]{section.6.5}{6.5 Importance Driven Path Tracing using the Photon Map}{chapter.6}% 51
+\BOOKMARK [0][]{chapter.7}{7 Conclusion and Future Work}{}% 52
+\BOOKMARK [0][]{section*.4}{Bibliography}{}% 53

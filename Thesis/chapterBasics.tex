@@ -1,0 +1,506 @@
+\chapter{Basics}
+\label{chapterBasics}
+
+This chapter covers all basic concepts and definitions used in the main part of this thesis. First we will cover some probability theory and Monte Carlo integration. Furthermore we present multiple importance sampling, a common variance reduction technique to improve Monte Carlo integration. After that we will introduce physically based rendering and the rendering equation.
+
+\section{Mathematical Basics}
+\subsection{Some Probability Theory}
+
+For all probability related concepts we use the same definitions and terminology as in \cite{veachdiss}. This section will only give a short overview on those equations that we will really need later on. For simplicity we will skip most of the derivations and equations that are not important to understand the main part of this thesis. See \cite[chapter 2.3]{veachdiss} for additional background information on probability theory.\\
+
+\textbf{The Probability Density Function}
+
+We will start with probability density functions (\textbf{pdf}). In general, a pdf is a continuous function $\Omega \rightarrow \mathbb{R}^+_0$ with the additional condition
+
+\begin{equation}
+\label{int_eins}
+\int_\Omega p(x) dx = 1.
+\end{equation}
+
+For one-dimensional $\Omega \subseteq \mathbb{R}$, we can use $p$ to compute the probability $\mathcal{P}$ of a random variable $X$ with that density lying in an Interval $\lbrack a,b\rbrack \subseteq \Omega$ as follows:
+
+\begin{equation*}
+\mathcal{P}\{a \leq X \leq b\} = \int _a^b p(x) dx.
+\end{equation*}
+
+We can also extend this principle to $n$-dimensional $\Omega \subseteq \mathbb{R}^n$ and random variables \\$X=(X^1, \dots, X^n) \in \Omega$. At first we need the \emph{joint cumulative distribution function} $P$:
+
+\begin{equation*}
+P(X) = P(x^1,\dots,x^n) := \mathcal{P}\{X^i \leq x^i \text{ }\forall i = 1,\dots,n\}.
+\end{equation*}
+
+The \emph{joint density function} $p$ for multidimensional $\Omega$ can be obtained from
+
+\begin{equation}
+\label{p1}
+p(x^1,\dots,x^n) = \frac{\partial ^n P}{\partial x^1 \cdots \partial x^n}(x^1,\dots,x^n).
+\end{equation}
+
+Note that this definition also works for $n=1$ and agrees with the conditions from above (equation \ref{int_eins}).
+
+The joint density function $p$ can be used to compute the probability of $X$ being part of some Lebesgue measurable subset $D\subseteq \Omega$:
+
+\begin{equation*}
+\mathcal{P}\{X\in D\} = \int_D p(X)d(X) = \int_D p(x^1, \dots, x^n) dx^1 \cdots dx^n.
+\end{equation*}\\
+
+\textbf{Measures}
+
+Throughout this thesis, we are going to use different criteria (e.g. surface area, solid angle or projected solid angle) to measure the same domain. This also affects the form of the applied pdfs. In the previous section we always integrated directly using $dx$ or $dx^i$. We will now introduce a more general approach that allows us to transform between different measures.
+
+First of all, we define
+
+\begin{equation*}
+P(D) := \mathcal{P}\{X\in D\}.
+\end{equation*}
+
+$P$ is a measure function called \emph{probability measure} for a random variable $X \in \Omega$. Just as in equation \ref{int_eins}, we demand $P(\Omega) = 1$. Similar to equation \ref{p1}, we obtain a corresponding pdf $p$ depending on a measure $\mu$ as follows:
+
+\begin{equation}
+\label{def_p}
+p(x) = \frac{dP}{d\mu}(x).
+\end{equation}
+
+There are different ways to pick $D$ and $\mu$ and therefore different possible pdfs. All of them satisfy
+
+\begin{equation*}
+P(X) = \int_Dp(x)d\mu(x)
+\end{equation*}
+
+with their very own measure $\mu$ that was used to define them in \ref{def_p}.\\
+
+\textbf{Expectation and variance}
+
+The \emph{expectation} or \emph{expected value} $E$ of a random variable $X$ with density $p$ and measure $\mu$ represents the expected average value of a huge number of random variables with density $p$. It is defined as
+
+\begin{equation*}
+E(X) = \int_\Omega x \cdot p(x) d\mu(x).
+\end{equation*}
+
+This equation also works if we consider some function $f$ of $X$ instead of $X$ itself:
+
+\begin{equation*}
+E(f(X)) = \int_\Omega f(x) \cdot p(x) d\mu(x).
+\end{equation*}
+
+The \emph{variance} indicates how much the random variables vary from the expected value. A variance of $0$ means that all random variables equal the expectation. The variance is always greater than or equal to zero and given by
+
+\begin{equation*}
+Var(X) = E\lbrack(X-E(X))^2\rbrack.
+\end{equation*}
+
+Another measure for the variation of random variables is the \emph{standard deviation}:
+
+\begin{equation*}
+\sigma(X) = \sqrt{Var(X)}.
+\end{equation*}
+
+\subsection {Monte Carlo Integration}
+Monte Carlo integration is a non-deterministic unbiased numerical method for estimating integrals and is especially useful whenever those integrals are high dimensional. As explained later on, solving the light transport problem requires computing such an integral over a theoretically infinite number of dimensions. We will now present the Monte Carlo estimator, show some of its advantages and introduce importance sampling to improve it.
+
+Say we want to integrate a function $f:\Omega \rightarrow \mathbb{R}$ over $\Omega$, where $\Omega$ has an arbitrary dimensionality and $\mu$ is some measure function on $\Omega$:
+
+\begin{equation}
+\label{int f}
+I = \int_\Omega f(x) d\mu(x).
+\end{equation}
+
+Let $p(x)$ be a probability density function on $\Omega$ with 
+
+\begin{equation*}
+\forall x \in \Omega: f(x) \neq 0 \Rightarrow p(x) > 0
+\end{equation*}
+
+and let $X$ be a random variable with density $p$. Then we can also express $I$ as follows:
+
+\begin{equation*}
+I = \int_\Omega f(x) d\mu(x) = \int_\Omega \frac{f(X)}{p(X)} \cdot p(X) d\mu(X) = E\left(\frac{f(X)}{p(X)}\right).
+\end{equation*}
+
+Thus we can interpret $I$ as the expectation of $f(X)/p(X)$. This expected value can be approximated using the Monte Carlo estimator $F_N$:
+
+\begin{equation}
+\label{f_n}
+I = E\left(\frac{f(X)}{p(X)}\right) \approx \frac{1}{N}\sum_{i = 1}^N \frac{f(X_i)}{p(X_i)} =: F_N.
+\end{equation}
+
+We use the index $N$ to indicate that the estimator uses $N$ samples.\\
+
+\textbf{Error and Bias}
+
+Given an estimator $F_N$ and the quantity $I$ we want to estimate, $F_N - I$ is called the \emph{error} of the estimator. The \emph{bias} $\beta$ of an estimator is the expected value of its error:
+
+\begin{equation*}
+\beta\lbrack F_N\rbrack = E(F_N - I).
+\end{equation*}
+
+If $\beta\lbrack F_N\rbrack = 0$ independent of the number of samples $N$, the estimator is called \emph{unbiased}. This is a desirable property for any estimator, because it guarantees that it will yield the correct value on average.\\
+
+\textbf{Advantages of Monte Carlo integration}
+
+The Monte Carlo estimator is unbiased, since
+
+\begin{equation*}
+\beta\lbrack F_N\rbrack = E\left( \frac{1}{N}\sum_{i = 1}^N \frac{f(X_i)}{p(X_i)} - I\right) = E\left( \frac{1}{N}\sum_{i = 1}^N \frac{f(X_i)}{p(X_i)}\right) - E(I) =  E\left(\frac{f(X)}{p(X)}\right) - I = I-I = 0.
+\end{equation*}
+
+When dealing with one or two dimensions, other techniques such as quadrature rules perform way better than $F_N$. However, Monte Carlo integration is practically the only integration method hat can handle infinite-dimensional integrals at all. \\
+It also has some desirable properties when dealing with high-dimensional integrals. First of all, its quality does not depend on the dimensionality. With deterministic approaches, the number of samples needed for the same standard deviation explodes exponentially with each additional dimension. In contrast, the standard deviation of $F_N$ is always proportional to $1/\sqrt{N}$, regardless of the dimensionality. More precisely,
+
+\begin{equation}
+\label{deviation}
+\sigma(F_N) = \frac{1}{\sqrt{N}}\sigma \left(\frac{f(X)}{p(X)}\right),
+\end{equation}
+as elaborated in \cite{veachdiss}. The quality of the estimator solely depends on the number of samples and on the quality of $p$ (i.e. how proportional $p$ and $f$ are). The estimator also converges at a rate of $\mathcal{O}(1/\sqrt{N})$.
+
+Another advantage of Monte Carlo integration is its ability to handle singularities, i.e. functions with discontinuities. In computer graphics, this is the case with ideal specular surfaces (e.g. mirrors), where light arriving from one direction is only scattered along exactly one outgoing direction; in other words, only light from one single direction contributes to the color we see on that surface.
+
+See \cite[chapter 2]{veachdiss} for additional information on Monte Carlo integration.\\
+
+
+\textbf{Importance Sampling}
+
+The difficulty of Monte Carlo integration lies in finding a good pdf. It can be shown that the optimal choice is 
+\begin{equation*}
+p^*(x) = \frac{f(x)}{I}
+\end{equation*}
+
+with a derivation of $0$ (see equation \ref{deviation} and \cite[chapter 2.5.2]{veachdiss}) - one sample generated by $p^*$ would suffice to compute the exact value of $I$. Unfortunately, since $I$ is the value we want to approximate, we can't know the exact value of $I$ in advance (if we did, numerically approximating $I$ would be pointless).\\
+However, there are ways to quickly construct a pdf that is at least roughly proportional to $f$. Generating Samples from a probability density function that is supposedly proportional to $f$ is called \emph{Importance Sampling}. Section \ref{importance_sampling_options} shows some Importance Sampling strategies specifically designed for approximating the rendering equation.
+
+Importance Sampling is one of several so-called \emph{variance reduction methods}. In addition to Importance Sampling we only used Russian Roulette, which is explained in section \ref{chapterRussianRoulette}. See \cite[chapters 2.5 - 2.8]{veachdiss} for an introduction to other variance reduction methods.
+
+
+\subsection{Multiple Importance Sampling}
+\label{multiple importance sampling}
+It can be hard to construct one general pdf that performs well in any case. Most times, it is easier to construct different pdfs that perform well under different circumstances, and weight them together. This can greatly improve Importance Sampling and is called \emph{Multiple Importance Sampling (MIS)}.
+
+As we will see in section \ref{importance_sampling_options}, there are different strategies to create pdfs for physically based rendering, but all of them show major weaknesses under different conditions. We will now show how any sampling strategies can be combined in a way that, given a pdf $p$ ($p'$) that performs well (badly) in case A and badly (well) in case $B$, whenever we have case A $p$ is chosen more often or weighted more heavily than $p'$. Thus we can reduce variance and make Monte Carlo integration more robust.
+
+There are two main categories for MIS: The multi-sample model, where many samples are generated and weighted together for one step, and the one-sample model, where only one sample is generated per step, which means we have to pick and weight one pdf for every step.
+
+Given a domain $\Omega$, a function $f:\Omega \rightarrow \mathbb{R}$ and a measure $\mu$, both models use a set of $n$ sampling strategies with pdfs $p_1 , \dots, p_n$ to approximate equation \ref{int f}.
+
+In order to apply the models, $f(x)$ and $p_i(x)$ must be defined for any $x\in \Omega, i\in 1, \dots, n$, and we have to be able to generate samples from $p_1, \dots, p_n$.\\
+
+
+\textbf{The Multi-Sample Model}
+
+The multi-sample model can be applied whenever we are able to generate one or more samples from each sampling strategy ($=$ pdf) to approximate an integral.
+
+First, a fix number $n_i\geq 1$ of samples is generated from each sampling strategy $i$ according to its pdf $p_i$. We will denote each sample $X_{i,j}$ with $i = 1,\dots ,n$ and $j=1,\dots,n_i$ referring to the sampling strategy and its number of samples respectively.\\
+All samples generated from the same strategy $i$ share one weighting function $w_i$. This allows us to assign different weights to samples from the same strategy. Finally we can compute the \emph{multi-sample estimator} $F$ to approximate \ref{int f}:
+
+\begin{equation*}
+F=\sum_{i=1}^n \frac{1}{n_i} \left( \sum_{j=1}^{n_i} w_i(X_{i,j}) \frac{f(X_{i,j})}{p_i(X_{i,j})} \right).
+\end{equation*}
+
+If we want $F$ to be unbiased (\cite[Lemma 9.1]{veachdiss}), there are two conditions for our weighting functions:
+
+\begin{equation}
+\label{condw1}
+f(x) \neq 0 \Rightarrow \sum_{i=1}^n w_i(x) = 1 \text{ and}
+\end{equation}
+
+\begin{equation}
+\label{condw2}
+\forall i = 1, \dots, n: p_i(x) = 0 \Rightarrow w_i(x) = 0.
+\end{equation}
+
+Note that for $n=1, n_1 = N$ and $w_1(x) = 1/N$ (one pdf with $N$ uniformly weighted samples) the resulting estimator $F$ equals $F_N$ from equation \ref{f_n}.
+
+Path tracing usually uses the multi-sample model to combine BSDF sampling and next event estimation, a short overview on that case is given in section \ref{pathtracingalgorithm}.\\
+
+
+
+\textbf{The Balance Heuristic}
+
+One possible way to define the weighting functions is
+
+\begin{equation}
+w_i(x) = \frac{n_ip_i(x)}{\sum_k n_kp_k(x)}.
+\end{equation}
+
+This combining strategy is called \emph{balance heuristic}. It shows a minimal variance compared to any other combination strategy -  \cite[9.2.2, page 264]{veachdiss} shows that ``no other combination strategy is much better''.\\
+
+
+\textbf{The Power Heuristic}
+
+The power heuristic is a generalization of the balance heuristic. It uses an exponent $\beta$ for all weights:
+
+\begin{equation}
+\label{power heuristic}
+w_i(x) = \frac{(n_ip_i(x))^\beta}{\sum_k (n_kp_k(x))^\beta}.
+\end{equation}
+
+As Veach showed in \cite[chapter 9.3.1]{veachdiss}, the power heuristic for $\beta=2$ can lead to better results for very rough or barely rough surfaces.
+
+Other possible weighting functions include discrete $w_i(x) \in \{0,1\}$ or uniform functions $w_i(x) = 1/n$, the cutoff heuristic, which ignores samples with small probabilities, or the maximum heuristic (the power heuristic for $\beta \rightarrow \infty$).\\
+
+\textbf{The One-Sample Model}
+
+There are times when we cannot or do not want to generate multiple samples from multiple pdfs, but still have several sampling strategies to choose from. In that case, we use a set of fix probabilities $c_1, \dots c_n$ with $\sum c_i = 1$ to pick one of our $n$ sampling strategies and take one sample $X_j$ from the chosen pdf $p_j$. The \emph{one-sample estimator} to approximate \ref{int f} is given as
+
+\begin{equation}
+\label{onesample}
+F=\frac{w_j(X_j)f(X_j)}{c_jp_j(X_j)}.
+\end{equation}
+
+For this model the balance heuristic is such a good choice for the weighting function that we don't have to use any improvements like the power heuristic (\cite[9.2.4]{veachdiss}). Plus, as long as we consider conditions \ref{condw1} and \ref{condw2}, equation \ref{onesample} also gives an unbiased estimator.
+
+In section \ref{mis_BSDF_irc}, we will use the one-sample model to combine two different sampling strategies for extending a path. We will also decide on $c_1$ and $c_2$ depending on the current surface probabilities instead of using the same $c_1$ and $c_2$ every time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\section{Physically based light transport}
+
+\subsection{Assumptions}
+Before we introduce the equations we used to model light transport, we are going to make a few assumptions. These constraints won't produce any significant difference compared to a physically accurate model, as long as we only render ``ordinary'' scenes that don't rely heavily on one of the excluded phenomena. However, it is always important to decide if the current model can produce valid results for a certain scene, or if some of those assumptions have to be discarded.
+
+Basically we assume a geometric optics model, where light only travels in straight lines and only interacts (gets emitted, scattered or absorbed) at surfaces. We also ignore all behaviour that arises from the wave or quantum characteristics of light.\\
+Thus the proposed model can't accurately render phenomena like participating media (e.g. fog or smoke), subsurface scattering (e.g. wax) or relativistic effects, diffraction or fluorescence. It also ignores varying refraction indices, be it dispersion at a surface, caused by a different index for different wave lengths, or media with a continuously varying index. With this model, light of any wavelength behaves the same, and no energy is lost while traveling between surfaces.
+
+There are some additional choices caused by the Mitsuba Renderer \cite{mitsuba} which we used as an implementation framework. Mitsuba supports a wide range of surfaces scattering models (see \cite[Mitsuba Documentation chapter 8.2]{mitsuba}) and allows for transmitting and ideal specular surfaces. However, in our implementation and test scenes, we ignored the more complex BSDFs for simplicity. We also ignore point light sources and terminate any path as soon as it hits a light source.
+
+\newpage
+\subsection{Notations}
+From now on, we will use the following notations (depicted in figure \ref{hemi}):
+\begin{itemize}
+\item $\mathcal{S}^2$ will be the set of all directions.
+\item $\omega \in \mathbb{R}^3$, $||\omega|| = 1$ will describe any direction on the unit sphere.
+\item $x$ will refer to a surface point and $N(x)$ to the surface's normal at $x$.
+\item $\sigma$ is the surface area measure on $\mathcal{S}^2$.\\
+$\sigma(\omega)$ represents the solid angle covered by $\omega$.
+\item $\sigma^\bot_x(\omega) := |\omega \cdot N(x)| \cdot \sigma(\omega)$ is the projected solid angle at $x$.\\
+Sometimes we might just use $\sigma^\bot(\omega)$ to refer to projected solid angles in general.\\
+Note that the solid angle and projected solid angle are unitless.
+\item $dA(x)$ will refer to an infinitesimal surface area around $x$.
+\item $\mathcal{H}_+^2(x) = \{\omega\in\mathcal{S}^2 | \omega \cdot N(x) > 0\}$ is the upper hemisphere and
+
+$\mathcal{H}_-^2(x) = \{\omega \in\mathcal{S}^2 | \omega \cdot N(x) < 0\}$ is the lower hemisphere at $x$.
+\item $L_o(x,\omega)$ represents the radiance leaving $x$ into direction $\omega$.
+\item $L_i(x,\omega)$ represents the incoming radiance at $x$ from direction $\omega$.
+\item $ray(x,\omega)$ refers to a ray with origin $x$ and direction $\omega$.
+\item $x_\mathcal{M}(x,\omega)$ is the \emph{ray casting function}. It returns the first surface point that is hit by $ray(x,\omega)$.
+
+
+\end{itemize}
+In free space (where $x$ is not a surface point) $L_i(x,\omega) = L_o(x,-\omega)$. At surfaces the relation between $L_i$ and $L_o$ is more complex, see section \ref{rendering equation}.
+
+Also note that for $L_i(x,\omega_i)$ the photons are actually moving in direction $-\omega_i$, as the $\omega \in \mathbb{R}^3$ always point from $x$ towards the hemisphere while the (incident) photons move through the hemisphere towards $x$.
+
+
+\begin{figure}[ht]
+	\centering
+\def\svgwidth{380pt}
+  \input{hemispheretext.pdf_tex}
+	\caption{The upper blue line represents $\mathcal{H}^2_+$, the dotted blue line represents $\mathcal{H}^2_-$.}
+\label{hemi}\end{figure}
+
+\newpage
+\subsection{Radiometry}
+
+This section will briefly cover the physical background of radiance and irradiance.\\
+ Physically speaking, the \emph{irradiance} is defined as power $\Phi$ (in Watt) per unit surface area $A$ (in $m^2$) at some point $x\in\mathbb{R}^3$:
+
+\begin{equation*}
+E(x) = \frac{d\Phi(x)}{dA(x)}.
+\end{equation*}
+
+The term irradiance and $E$ are used for the total \emph{incident} radiation on \emph{one} hemisphere only. Radiance \emph{leaving} the surface is referred to as \emph{radiant exitance} and can happen on both hemispheres. 
+
+The \emph{radiance} itself can be expressed as
+
+\begin{equation*}
+L(x,\omega) = \frac{d^2\Phi(x,\omega)}{dA(x)d\sigma^\bot_x(\omega)}.
+\end{equation*}
+
+It measures the radiance at $x$ from an infinitesimal cone around direction $\omega$. The definition of $L$ can also be extended to include different wavelengths; we will ignore that.\\
+We will use $\omega_i$ and $L_i(x,\omega_i)$ to refer to radiance arriving at a point $x$ from direction $\omega_i$ (photons moving along $-\omega_i$), and $L_o(x,\omega_o)$ when we talk about the radiance leaving $x$ into direction $\omega_o$.
+
+
+We can also express irradiance as an integral of incoming light as follows:
+
+\begin{equation*}
+E(x) = \int_{\mathcal{H}^2_+(x)}L(x,\omega)d\sigma^\bot(\omega)
+\end{equation*}
+or
+\begin{equation}
+\label{e and l}
+dE(\omega_i) = L_i(\omega_i)d\sigma^\bot(\omega_i).
+\end{equation}
+
+Experiments have shown that irradiance and outgoing radiance are proportional, i.e. 
+
+\begin{equation*}
+dL_o(\omega_o) \propto dE(\omega_i).
+\end{equation*}
+
+We will not explain this topic any further, see \cite[chapter 9.3]{veachdiss} for a more detailed introduction on radiometric quantities.\\
+
+
+\subsection{The bidirectional scattering distribution function (BSDF)}
+\label{BSDF}
+
+The \emph{bidirectional scattering distribution function} (\textbf{BSDF}) is used to describe how surfaces scatter light. It indicates how much of the energy arriving at a point $x$ from an incoming direction $\omega_i$ is scattered into any outgoing direction $\omega_o$. 
+
+Usually, the BSDF is divided into a \emph{bidirectional reflectance distribution function} (BRDF) and a \emph{bidirectional transmittance distribution function} (BTDF), that cover the reflectance and transmittance at a surface respectively. The BRDF only uses incoming and outgoing directions on the same hemisphere, whereas the BTDF only uses directions on opposite hemispheres. Since the BSDF is simply the union of two BRDFs and two BTDF (one for each side of the surface), we will only use the BSDF later on. We will denote BRDFs with $f_r$, BTDFs with $f_t$ and BSDFs with $f_s$.\\
+
+\textbf{Parameterization}
+
+The BSDF $f_s$ at some surface point $x$ is defined as
+
+\begin{equation*}
+f_s(\omega_i,x,\omega_o) = \frac{dL_{o,s}(\omega_o)}{dE(\omega_i)}.
+\end{equation*}
+
+Using equation \ref{e and l} we can also write $f_s$ as
+\begin{equation}
+\label{scattering1}
+f_s(\omega_i,x,\omega_o) = \frac{dL_{o,s}(\omega_o)}{L_i(\omega_i)d\sigma^\bot(\omega_i)}.
+\end{equation}
+
+It describes the relation of radiance arriving from direction $\omega_i$ to $L_{o,s}(x,\omega_o)$ (radiance scattered along $\omega_o$). We add the index $s$ to $L_o$ to indicate that we are only considering outgoing light that was scattered, and ignore outgoing light that was emitted at $x$.
+
+With physically based rendering, we can always assume that the incoming radiance originated at some point $x_0$ (either it was emitted at $x_0$ along $-\omega_i$ and hit $x$ directly, or it was emitted somewhere else, scattered across the scene and finally scattered from $x_0$ to $x$).\\
+Theoretically a ray with origin $x$ and direction $\omega_o$ may never intersect any geometry again, which means that light scattered along $\omega_o$ leaves the scene, but those cases are not interesting for us. So, assuming that the light scattered at $x$ along $\omega_o$ hits the scene again at some point $x_2$, we can also use the following notation for $f_s$:
+
+\begin{equation}
+\label{fspoint}
+f_s(x_0 \rightarrow x \rightarrow x_2) = f_s(\omega_i,x,\omega_o).
+\end{equation}
+
+\textbf{Properties}
+
+We can make two assumptions about physically correct BRDFs that do not necessarily apply to BTDFs and BSDFs. First of all, physically correct BRDFs are always symmetric:
+
+\begin{equation*}
+\forall x, \omega_i,\omega_o: \text{ } f_r(\omega_i, x, \omega_o) = f_r(\omega_o, x, \omega_i).
+\end{equation*}
+
+Plus, we can assume that the scattered energy never exceeds the incoming energy, this property is called \emph{energy conservation}:
+
+\begin{equation*}
+\forall \omega_i \in \mathcal{H}_i^2: \text{ } \int_{\mathcal{H}_o^2}f_r(\omega_i , x, \omega_o) d\sigma^\top(\omega_o) \leq 1 .
+\end{equation*}
+
+With some surfaces these conditions do not hold for the BSDF or BTDF. To include such surfaces to a bidirectional path tracing algorithm or path tracing combined with photon mapping, we also have to use the \emph{adjoint BSDF}, which is basically the BSDF with switched arguments ($f_s(\omega_o,x,\omega_i)$ instead of $f_s(\omega_i,x,\omega_o)$, see \cite[chapter 3.7.3 - 3.7.6]{veachdiss}).\\
+The adjoint BSDF is used to sample paths that carry importance and for scattering photons, while we can use the original BSDF for paths that carry radiance. Later on, we will use the adjoint BSDF in our photon mapping step, as explained in section \ref{modified photon mapping}.\\
+
+\textbf{Delta-BSDFs}
+
+Ideal specular surfaces have the unique property that for every outgoing direction $\omega_o$ there is exactly one incoming direction $\omega_i$, so that all of the radiance arriving at $\omega_i$ is scattered along $\omega_o$. For a given $x$ and $\omega_o$ (or $x$ and $\omega_i$), the BSDF describing this surface is always $0$ except for one $\omega_i$ (or $\omega_o$). We call such a BSDF a \emph{delta-BSDF}. All other BSDFs contain a diffuse component, we call those \emph{smooth} BSDFs.
+
+
+\newpage
+\subsection{The Rendering Equation}
+
+The goal of our algorithm is to render an image, which means we have to compute the color of each individual pixel. In order to do that we model each pixel $j$ as a hypothetical sensor with area $\mathcal{M}$. The so-called \emph{sensor sensitivity function} $W_e^j(x,\omega)$ describes how this sensor responds to light arriving at $x\in \mathcal{M}$ from direction $\omega$. The color of the pixel is given as the total sensor response, called the \emph{measurement equation}:
+
+\begin{equation}
+\label{measurement equation}
+I^j = \int_{\mathcal{M}\times\mathcal{S}^2}W^j_e(x,\omega)L_i(x,\omega)dA(x)d\sigma^\bot_x(\omega).
+\end{equation}
+
+Sometimes the scenes we want to render are "open" - for some directions $\omega'$ and starting points $x'$, $ray(x',\omega)$ may never intersect any geometry. This means that no light $L_i$ can arrive at $x'$ along $\omega'$ and the integrand will be $0$ for $\omega'$. For all other directions there has to be one point $x_\mathcal{M}(x,\omega)$ in the scene that was hit by a ray from $x$ along $\omega$.
+
+Since our model only allows light to change at surfaces, we can express the incident radiance as
+
+\begin{equation*}
+L_i(x,\omega) = L_o(x_\mathcal{M}(x,\omega),-\omega).
+\end{equation*}
+
+The outgoing light can be divided into scattered and emitted light:
+
+\begin{equation*}
+L_o(x,\omega) = L_e(x,\omega) + L_{o,s}(x,\omega).
+\end{equation*}
+
+The emitted light $L_e(x,\omega)$ is given by the scene description. We can obtain the scattered light when we convert equation \ref{scattering1} to the \emph{(surface) scattering equation}:
+
+\begin{equation}
+\label{scattering equation}
+L_{o,s}(x,\omega) = \int_{\mathcal{S}^2}  L_i(x,\omega_i) \cdot f_s(\omega_i,x,\omega_o) d\sigma^\bot(\omega_i).
+\end{equation}
+
+Combining these equations leads to the \emph{rendering equation}
+
+\begin{equation}
+\label{rendering equation}
+L_o(x,\omega) = L_e(x,\omega) + \int_{\mathcal{S}^2}L_i(x,\omega) \cdot f_s(\omega_i,x,\omega_o)d\sigma^\bot(\omega_i).
+\end{equation}
+
+Veach \cite[chapter 3.7.2]{veachdiss} uses the term \emph{light transport equation} for a slightly different form of the same equation:
+
+\begin{equation*}
+L_o(x,\omega_o) = L_e(x,\omega_o) + \int_{\mathcal{S}^2} L_o(x_\mathcal{M}(x,\omega_i),-\omega_i) \cdot f_s(\omega_i,x,\omega_o)d\sigma^\bot_x(\omega_i).
+\end{equation*}
+
+In theory the rendering equation (or the light transport equation) could now be solved recursively. In praxis they are usually solved with Monte Carlo integration.\\
+Both equations represent the outgoing light at $x$ into $\omega_o$ as the sum of the radiance emitted along $\omega_o$ and the integral of all scattered incident radiance.
+
+
+
+
+
+
+\subsection{Three-point form of the rendering equation}
+
+In this section we will show how to express the rendering equation \ref{rendering equation} over surface area by using surface points instead of directions. This makes the arguments more relatable to an actual path from surface point to surface point and leads us to a non-recursive solution for the rendering equation which is the basis of path tracing.
+
+As we want to use surface points instead of direction vectors, we need a way to convert between the projected solid angle measure used in \ref{rendering equation} and the surface area measure. Figure \ref{geometryconversions} depicts the relations between the (projected) solid angle at some surface point $x$ and the surface area at another point $x'$.
+
+
+\begin{figure}[ht]
+	\centering
+\def\svgwidth{240pt}
+  \input{geometry.pdf_tex}
+\caption{Connection between different measures}
+\label{geometryconversions}\end{figure}
+
+First we define the \emph{geometry term}
+
+\begin{equation*}
+G(x \leftrightarrow x') = V(x \leftrightarrow x') \text{ } \frac{|\omega \cdot N(x)| |\omega \cdot N(x')|}{|x-x'|^2}
+\end{equation*}
+
+where $V(x \leftrightarrow x')$ is $1$ whenever $x$ and $x'$ are visible from each other and $0$ otherwise. $V$ is also called \emph{visibility factor}.\\
+We can use $G$ to switch between the measures as follows:
+
+\begin{equation}
+\label{geotrans}
+d\sigma^\bot(\omega) = |\omega \cdot N(x)| d\sigma(\omega) = G(x \leftrightarrow x')dA(x').
+\end{equation}
+
+Sometimes we will write $cos(x \rightarrow x')$ instead of $\omega \cdot N(x)$.
+
+Given a surface point $x$ and direction $\omega$ such that $x' = x_\mathcal{M}(x,\omega)$, we also define
+
+\begin{equation*}
+L(x \rightarrow x') := L(x,\omega).
+\end{equation*}
+
+With equation \ref{geotrans} and the notation from \ref{fspoint} we can now express the rendering equation over the union of all scene surfaces $\mathcal{M}$:
+
+\begin{equation}
+\label{tpf}
+L(x'\rightarrow x'') = L_e(x' \rightarrow x'') + \int_\mathcal{M}L(x \rightarrow x') f_s(x \rightarrow x' \rightarrow x'') G(x \leftrightarrow x'). dA(x)
+\end{equation}
+
+This is also called the \emph{three-point form} of the light transport equation.

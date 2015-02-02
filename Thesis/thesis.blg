@@ -1,0 +1,28 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: titlepage.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: chapterIntroduction.aux
+A level-1 auxiliary file: chapterBasics.aux
+A level-1 auxiliary file: chapterPathTracing.aux
+A level-1 auxiliary file: chapterIrradianceCaching.aux
+A level-1 auxiliary file: chapterRendering.aux
+A level-1 auxiliary file: chapterRelatedWork.aux
+A level-1 auxiliary file: chapterConclusion.aux
+The style file: IEEEtranSA.bst
+Illegal, another \bibstyle command---line 28 of file thesis.aux
+ : \bibstyle
+ :          {IEEEtranSA}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: declaration.aux
+Database file #1: thesis.bib
+-- IEEEtranSA.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+** Sorting Alpha version - not for normal IEEE work.
+Warning--to sort, need author or key in nanoflann
+Warning--empty institution in lafortune96
+Warning--empty journal in epanechnikov
+Warning--missing school in veachdiss
+
+Done.
+(There was 1 error message)

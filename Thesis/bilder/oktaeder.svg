@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="658.14618"
+   height="369.78381"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="planar_projection.pdf">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="-61.575619"
+     inkscape:cy="48.558055"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="50"
+     fit-margin-left="50"
+     fit-margin-right="50"
+     fit-margin-bottom="10" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none"
+     transform="translate(2.8241425,-25.90435)">
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.44401544;stroke:#000000;stroke-width:5.69114208;stroke-miterlimit:4;stroke-opacity:1"
+       d="m 176.09438,336.49188 147.15443,0 147.15443,0 0,294.30887 -147.15443,0 -147.15443,0 z"
+       id="rect2985-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#e2e2e2;fill-opacity:0.44401544;stroke:#000000;stroke-width:5.69114208;stroke-miterlimit:4;stroke-opacity:1"
+       d="m 54.631283,446.27921 147.154437,0 147.15443,0 0,294.30886 -147.15443,0 -147.154437,0 z"
+       id="rect2985"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 54.631283,446.27921 60.731547,-54.89367 60.73155,-54.89366"
+       id="path3773"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 470.40324,336.49188 -60.73155,54.89366 -60.73154,54.89367"
+       id="path3775"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 348.94015,740.58807 60.73154,-54.89366 60.73155,-54.89366"
+       id="path3777"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 54.631283,740.58807 60.731547,-54.89366 60.73155,-54.89366"
+       id="path3779"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 409.67169,391.38554 -147.15443,0 -147.15443,0"
+       id="path3781"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 409.67169,391.38554 0,147.15444 0,147.15443"
+       id="path3783"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 115.36283,685.69441 147.15443,0 147.15443,0"
+       id="path3785"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 115.36283,391.38554 0,147.15444 0,147.15443"
+       id="path3787"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 323.24881,336.49188 0,147.15443 0,147.15444"
+       id="path3793"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 201.78572,446.27921 0,147.15443 0,147.15443"
+       id="path3795"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="oktaederebene"
+     style="display:inline"
+     transform="translate(2.8241425,-25.90435)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 66.71427,806.39713 207.88599,-54.89367 m 0,0 86.42288,54.89367 -147.15443,147.15443 -60.73154,-92.26077 60.73154,-202.0481 -147.15444,147.15444 147.15444,147.15443 60.73155,-202.0481 -60.73155,-92.26077 147.15443,147.15444 -207.88597,54.89366 -86.4229,-54.89366"
+       id="path3804"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccc"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#d6189c;fill-opacity:0.55984557;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 66.71427,806.39713 213.86871,659.24269 153.13717,861.29079 z"
+       id="path3806"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e26600;fill-opacity:0.96911196;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 361.02314,806.39713 153.13717,861.29079"
+       id="path3808"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ef5b25;fill-opacity:0.83268983;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 213.86871,953.55156 361.02314,806.39713"
+       id="path3810"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e26600;fill-opacity:0.96911196;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 153.13717,861.29079 60.73154,92.26077"
+       id="path3812"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ef5b25;fill-opacity:0.83268983;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 66.71427,806.39713 213.86871,953.55156"
+       id="path3814"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ef5b25;fill-opacity:0.83268983;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 213.86871,659.24269 361.02314,806.39713"
+       id="path3816"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#1417c5;fill-opacity:0.76447874;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 213.86871,659.24269 -60.73154,202.0481 207.88597,-54.89366 z"
+       id="path3818"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ea6734;fill-opacity:0.76447874;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 66.71427,806.39713 86.4229,54.89366 60.73154,92.26077 L 66.71427,806.39713"
+       id="path3820"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#16caaf;fill-opacity:0.76459231;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 361.02314,806.39713 213.86871,953.55156 153.13717,861.29079 z"
+       id="path3822"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#d6179b;fill-opacity:0.56078384;stroke:none;font-family:arial;-inkscape-font-specification:arial"
+       x="105.63715"
+       y="720.93365"
+       id="text3824"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826"
+         x="105.63715"
+         y="720.93365">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1418c5;fill-opacity:0.76470588;stroke:none;font-family:arial;-inkscape-font-specification:arial"
+       x="280.29678"
+       y="715.05475"
+       id="text3824-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-4"
+         x="280.29678"
+         y="715.05475">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0b6b5d;fill-opacity:0.76459231;stroke:none;font-family:arial;-inkscape-font-specification:arial"
+       x="288.79846"
+       y="920.96436"
+       id="text3824-7-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-4-9"
+         x="288.79846"
+         y="920.96436">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ea6734;fill-opacity:0.76470588;stroke:none;font-family:arial;-inkscape-font-specification:arial"
+       x="102.43959"
+       y="915.77881"
+       id="text3824-7-0-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-4-9-8"
+         x="102.43959"
+         y="915.77881">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="-119.66787"
+       y="784.00262"
+       id="text3824-8-4-22"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-x="25.253814"
+       inkscape:transform-center-y="34.345187"><tspan
+         sodipodi:role="line"
+         id="tspan3826-2-5-1"
+         x="-119.66787"
+         y="784.00262" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="266.21933"
+       y="784.66736"
+       id="text3824-8-4-22-9"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-x="25.253814"
+       inkscape:transform-center-y="34.345187"><tspan
+         sodipodi:role="line"
+         id="tspan3826-2-5-1-0"
+         x="266.21933"
+         y="784.66736" /></text>
+    <path
+       style="fill:none;stroke:#2ecc44;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 225.54729,235.27631 147.15442,1e-5"
+       id="path6650"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#208c2f;fill-opacity:1;stroke:none;font-family:arial;-inkscape-font-specification:arial"
+       x="287.60068"
+       y="231.42731"
+       id="text6652"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan6654"
+         x="287.60068"
+         y="231.42731">1</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="oktaedertomap"
+     style="display:inline"
+     transform="translate(2.8241425,-25.90435)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 78.392848,237.77612 286.27883,182.88245 m 0,0 86.42288,54.89367 L 225.54728,384.93055 164.81574,292.66978 225.54728,90.621683 78.392848,237.77612 225.54728,384.93055 286.27883,182.88245 225.54728,90.621683 372.70171,237.77612 164.81574,292.66978 78.392848,237.77612"
+       id="path3804-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccc"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e26600;fill-opacity:0.96911196;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 372.70171,237.77612 164.81574,292.66978"
+       id="path3808-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ef5b25;fill-opacity:0.83268983;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 225.54728,384.93055 372.70171,237.77612"
+       id="path3810-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e26600;fill-opacity:0.96911196;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 164.81574,292.66978 60.73154,92.26077"
+       id="path3812-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 156.42857,255.21932 c 0,-60.35714 0,-60.35714 0,-60.35714"
+       id="path6433"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ef5b25;fill-opacity:0.83268983;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 78.392848,237.77612 225.54728,384.93055"
+       id="path3814-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#d6179b;fill-opacity:0.36514522;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 78.392848,237.77612 225.54728,90.621683 164.81574,292.66978 z"
+       id="path3806-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ef5b25;fill-opacity:0.83268983;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 225.54728,90.621683 372.70171,237.77612"
+       id="path3816-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 225.54728,90.621683 164.81574,292.66978 372.70171,237.77612 z"
+       id="path3818-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 78.392848,237.77612 86.422892,54.89366 60.73154,92.26077 L 78.392848,237.77612"
+       id="path3820-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 372.70171,237.77612 225.54728,384.93055 164.81574,292.66978 z"
+       id="path3822-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="291.97534"
+       y="146.43369"
+       id="text3824-7-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-4-4"
+         x="291.97534"
+         y="146.43369">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="300.47699"
+       y="352.34341"
+       id="text3824-7-0-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-4-9-6"
+         x="300.47699"
+         y="352.34341">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:none;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="114.11819"
+       y="347.15787"
+       id="text3824-7-0-4-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-4-9-8-0"
+         x="114.11819"
+         y="347.15787">7</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2, 2;stroke-dashoffset:0"
+       d="m 164.81574,292.66978 60.73155,-54.89367 60.73154,-54.89366"
+       id="path6417"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#d6169c;fill-opacity:0.36470588;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       id="path6437-0-6"
+       sodipodi:cx="489.09598"
+       sodipodi:cy="418.4671"
+       sodipodi:rx="0.27901787"
+       sodipodi:ry="0.36830357"
+       d="m 489.375,418.4671 a 0.27901787,0.36830357 0 1 1 -0.55804,0 0.27901787,0.36830357 0 1 1 0.55804,0 z"
+       transform="matrix(3.2624898,0,0,0.77461347,-1439.242,-68.127357)"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#d6169c;fill-opacity:0.36470588;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 78.392848,237.77612 147.154442,-1e-5 -60.73155,54.89367 -86.422892,-54.89366"
+       id="path6419"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2, 2;stroke-dashoffset:0"
+       d="m 372.70171,237.77612 -294.308862,0"
+       id="path6423"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2, 2;stroke-dashoffset:0"
+       d="m 225.54728,90.621683 0,294.308867"
+       id="path6425"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 76.663298,116.55781 72.099622,75.38263 0.12627,57.95751"
+       id="path6429"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 76.410758,117.8205 79.765272,78.30437"
+       id="path6431"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#d6169c;fill-opacity:0.36470588;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path6437"
+       sodipodi:cx="489.09598"
+       sodipodi:cy="418.4671"
+       sodipodi:rx="0.27901787"
+       sodipodi:ry="0.36830357"
+       d="m 489.375,418.4671 a 0.27901787,0.36830357 0 1 1 -0.55804,0 0.27901787,0.36830357 0 1 1 0.55804,0 z"
+       transform="matrix(2.1750362,0,0,1.6477547,-987.85954,-572.30735)"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#d6169c;fill-opacity:0.36470588;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       id="path6437-0"
+       sodipodi:cx="489.09598"
+       sodipodi:cy="418.4671"
+       sodipodi:rx="0.27901787"
+       sodipodi:ry="0.36830357"
+       d="m 489.375,418.4671 a 0.27901787,0.36830357 0 1 1 -0.55804,0 0.27901787,0.36830357 0 1 1 0.55804,0 z"
+       transform="matrix(2.1750362,0,0,1.6477547,-907.46217,-493.3743)"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="151.87465"
+       y="185.34937"
+       id="text6138-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="151.87465"
+         y="185.34937"
+         id="tspan6509">d'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="45.80867"
+       y="104.53716"
+       id="text6138-13"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="45.80867"
+         y="104.53716"
+         id="tspan6505">d</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="132.68178"
+       y="256.06012"
+       id="text6138-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="132.68178"
+         y="256.06012"
+         id="tspan6522">p</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="mapebene"
+     style="display:inline"
+     transform="translate(2.8241425,-25.90435)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.80429363;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline"
+       d="m 422.42035,699.58781 223.59785,0 223.59785,0 0,222.85221 -223.59785,0 -223.59785,0 z"
+       id="rect3895"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.80429363;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 646.0182,699.58781 0,222.85221"
+       id="path3898"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="M 422.42035,699.58781 646.0182,922.44002"
+       id="path3900"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="M 646.0182,699.58781 534.21927,811.01391 422.42035,922.44002"
+       id="path3902"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="M 646.0182,699.58781 869.61605,922.44002"
+       id="path3904"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="M 869.61605,699.58781 646.0182,922.44002"
+       id="path3906"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#a2a2a2;fill-opacity:0.76459231;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="M 646.0182,699.58781 534.21927,811.01391 422.42035,699.58781 z"
+       id="path3908"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#a2a2a2;fill-opacity:0.76459231;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="M 422.42035,922.44002 534.21927,811.01391 422.42035,699.58781 z"
+       id="path3910"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#a2a2a2;fill-opacity:0.76459231;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="m 646.0182,699.58781 111.79893,111.4261 111.79892,111.42611 0,-222.85221 z"
+       id="path3912"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#1418c5;fill-opacity:0.76470588;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="m 646.0182,922.44002 0,-222.85221 -111.79893,111.4261 z"
+       id="path3914"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#d6179b;fill-opacity:0.56078384;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="m 534.21927,811.01391 -111.79892,111.42611 223.59785,0 z"
+       id="path3916"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="M 757.81713,811.01391 869.61605,699.58781"
+       id="path3918"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#16c9af;fill-opacity:0.76470588;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="M 646.0182,922.44002 757.81713,811.01391 646.0182,699.58781 z"
+       id="path3920"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ea6734;fill-opacity:0.76470588;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="m 646.0182,922.44002 111.79893,-111.42611 111.79892,111.42611 -223.59785,0"
+       id="path3922"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:44.86869812px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="523.28613"
+       y="903.76477"
+       id="text3824-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-2"
+         x="523.28613"
+         y="903.76477">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44.86869812px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="591.83905"
+       y="827.07288"
+       id="text3824-8-4"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-x="28.327621"
+       inkscape:transform-center-y="38.525589"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-2-5"
+         x="591.83905"
+         y="827.07288">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44.86869812px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="746.50793"
+       y="904.33441"
+       id="text3824-8-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-2-1"
+         x="746.50793"
+         y="904.33441">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44.86869812px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="676.8219"
+       y="826.86475"
+       id="text3824-8-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-2-11"
+         x="676.8219"
+         y="826.86475">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44.86869812px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="440.15927"
+       y="827.13861"
+       id="text3824-8-4-2"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-x="28.327641"
+       inkscape:transform-center-y="38.525598"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-2-5-3"
+         x="440.15927"
+         y="827.13861">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44.86869812px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="520.28461"
+       y="751.58118"
+       id="text3824-8-4-6"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-x="28.327633"
+       inkscape:transform-center-y="38.525594"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-2-5-8"
+         x="520.28461"
+         y="751.58118">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44.86869812px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="746.26697"
+       y="751.03345"
+       id="text3824-8-4-5"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-x="28.327615"
+       inkscape:transform-center-y="38.525578"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-2-5-7"
+         x="746.26697"
+         y="751.03345">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:44.86869812px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:arial;-inkscape-font-specification:arial"
+       x="818.61664"
+       y="826.86475"
+       id="text3824-8-4-61"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-x="28.327622"
+       inkscape:transform-center-y="38.52559"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3826-2-5-89"
+         x="818.61664"
+         y="826.86475">6</tspan><tspan
+         sodipodi:role="line"
+         x="818.61664"
+         y="882.95062"
+         id="tspan6233" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.12171745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       d="m 646.36919,699.58781 0,222.85221"
+       id="path6235"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\octahedron.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="koordsys"
+     style="display:inline"
+     transform="translate(2.8241425,-25.90435)">
+    <g
+       id="g6131"
+       transform="translate(458.57144,-767.85715)"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3985"
+         d="m 1.2425083,953.6047 0,97.515 97.5149837,0"
+         style="fill:none;stroke:#000000;stroke-width:3.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3989"
+         d="M 0.5,1051.8622 61.23154,996.96852"
+         style="fill:none;stroke:#000000;stroke-width:3.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none" />
+      <path
+         transform="matrix(0.99976232,0.02180135,-0.02180135,0.99976232,-9.3873056,63.845112)"
+         inkscape:transform-center-y="-4.1649775"
+         inkscape:transform-center-x="0.019821799"
+         d="m 44.446711,887.70732 -28.969359,0.56303 13.997084,-25.36972 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="1.5513635"
+         sodipodi:arg1="0.50416596"
+         sodipodi:r2="8.3643131"
+         sodipodi:r1="16.728626"
+         sodipodi:cy="879.6261"
+         sodipodi:cx="29.7995"
+         sodipodi:sides="3"
+         id="path6093"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0.1;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="star" />
+      <path
+         transform="matrix(-0.02180135,0.99976232,-0.99976232,-0.02180135,980.80076,1040.9118)"
+         inkscape:transform-center-y="-0.019820889"
+         inkscape:transform-center-x="-4.1649294"
+         d="m 44.446711,887.70732 -28.969359,0.56303 13.997084,-25.36972 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="1.5513635"
+         sodipodi:arg1="0.50416596"
+         sodipodi:r2="8.3643131"
+         sodipodi:r1="16.728626"
+         sodipodi:cy="879.6261"
+         sodipodi:cx="29.7995"
+         sodipodi:sides="3"
+         id="path6093-5"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0.1;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="star" />
+      <path
+         transform="matrix(0.65277,0.75755614,-0.75755614,0.65277,714.27652,395.33886)"
+         inkscape:transform-center-y="2.6035794"
+         inkscape:transform-center-x="1.7196614"
+         d="m 44.446711,887.70732 -28.969359,0.56303 13.997084,-25.36972 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="1.5513635"
+         sodipodi:arg1="0.50416596"
+         sodipodi:r2="8.3643131"
+         sodipodi:r1="16.728626"
+         sodipodi:cy="879.6261"
+         sodipodi:cx="29.7995"
+         sodipodi:sides="3"
+         id="path6093-5-2"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0.1;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="star" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:arial;-inkscape-font-specification:arial"
+       x="445.24869"
+       y="139.22934"
+       id="text6138"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan6140"
+         x="445.24869"
+         y="139.22934">y</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:arial;-inkscape-font-specification:arial"
+       x="585.61499"
+       y="291.86349"
+       id="text6138-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="585.61499"
+         y="291.86349"
+         id="tspan6163">x</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:arial;-inkscape-font-specification:arial"
+       x="544.35236"
+       y="201.22571"
+       id="text6138-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="E:\Kekse\projekte\Bachelorarbeit\Ausarbeitung\bilder\planar_projection.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan6140-4"
+         x="544.35236"
+         y="201.22571">z</tspan></text>
+  </g>
+</svg>

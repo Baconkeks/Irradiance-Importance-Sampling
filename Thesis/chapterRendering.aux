@@ -1,0 +1,98 @@
+\relax 
+\providecommand{\transparent@use}[1]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Rendering}{37}{chapter.5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chapter:rendering}{{5}{37}{Rendering\relax }{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Sampling Caches}{37}{section.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Path Extension}{37}{subsection.5.1.1}}
+\newlabel{path extension}{{5.1.1}{37}{Path Extension\relax }{subsection.5.1.1}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Pick Cache}}{38}{algorithm.4}}
+\newlabel{pickCache}{{4}{38}{Path Extension\relax }{algorithm.4}{}}
+\newlabel{algopickcache}{{4}{38}{Path Extension\relax }{algorithm.4}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Sample Direction from Cache}}{39}{algorithm.5}}
+\newlabel{sampleCache}{{5}{39}{Path Extension\relax }{algorithm.5}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {6}{\ignorespaces Weight path energy for Monte Carlo integration}}{39}{algorithm.6}}
+\newlabel{weight1}{{6}{39}{Path Extension\relax }{algorithm.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Computing probabilities for given directions}{40}{subsection.5.1.2}}
+\newlabel{computePdf}{{5.1.2}{40}{Computing probabilities for given directions\relax }{subsection.5.1.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Combining BSDFs and Caches}{41}{section.5.2}}
+\newlabel{combining BSDFs and caches}{{5.2}{41}{Combining BSDFs and Caches\relax }{section.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Multiple Importance Sampling of BSDFs and IRCs}{41}{subsection.5.2.1}}
+\newlabel{mis_BSDF_irc}{{5.2.1}{41}{Multiple Importance Sampling of BSDFs and IRCs\relax }{subsection.5.2.1}{}}
+\citation{mitsuba}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Combining NEE and Caches}{42}{section.5.3}}
+\citation{veachdiss}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Evaluation}{43}{section.5.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Comparison of Different Sampling Strategies}{44}{subsection.5.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces NEE and IRC sampling: The IRCs handle the caustics, and NEE takes care of an overall smooth appearance.}}{44}{figure.5.1}}
+\newlabel{kugel_nee_caches}{{\relax 5.1}{44}{NEE and IRC sampling: The IRCs handle the caustics, and NEE takes care of an overall smooth appearance}{figure.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Left: NEE and BSDF sampling. In comparison to IRCs, BSDF sampling produces more noise in the caustics. The general noise produced by BSDF sampling consists of darker dots, while the noise of IRCs are colored sparks which can be cancelled out easier by NEE.\newline  Right: BSDF sampling and IRCs. The caustics look better than on the left, but the overall noise is worse.}}{44}{figure.5.2}}
+\newlabel{kugel_BSDF}{{\relax 5.2}{44}{Left: NEE and BSDF sampling. In comparison to IRCs, BSDF sampling produces more noise in the caustics. The general noise produced by BSDF sampling consists of darker dots, while the noise of IRCs are colored sparks which can be cancelled out easier by NEE.\newline Right: BSDF sampling and IRCs. The caustics look better than on the left, but the overall noise is worse}{figure.5.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces NEE and IRC sampling.}}{45}{figure.5.3}}
+\newlabel{spiegel_nee_caches}{{\relax 5.3}{45}{NEE and IRC sampling}{figure.5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Left: NEE and BSDF sampling. Just as with the glass spheres, the caustics show more noise than figure \ref  {spiegel_nee_caches}. The noise on the walls is roughly the same, which might be the result of the brighter light source.\newline  Right: BSDF sampling and IRCs. While the caustics are smooth, there is notable noise from the IRCs.}}{45}{figure.5.4}}
+\newlabel{spiegel_BSDF}{{\relax 5.4}{45}{Left: NEE and BSDF sampling. Just as with the glass spheres, the caustics show more noise than figure \ref {spiegel_nee_caches}. The noise on the walls is roughly the same, which might be the result of the brighter light source.\newline Right: BSDF sampling and IRCs. While the caustics are smooth, there is notable noise from the IRCs}{figure.5.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Left: NEE and IRCs. Right: BSDF sampling and IRCs.}}{46}{figure.5.5}}
+\newlabel{veach_ircs}{{\relax 5.5}{46}{Left: NEE and IRCs. Right: BSDF sampling and IRCs}{figure.5.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Top: Rendered with NEE and IRCs, 250k photon paths ($\approx $ 1.500.000 photons), 30k caches, 2k photons per cache, 4096 samples per pixel.\newline  Bottom: Rendered with NEE and BSDF sampling, 4096 samples per pixel.}}{46}{figure.5.6}}
+\newlabel{bidir_ircs}{{\relax 5.6}{46}{Top: Rendered with NEE and IRCs, 250k photon paths ($\approx $ 1.500.000 photons), 30k caches, 2k photons per cache, 4096 samples per pixel.\newline Bottom: Rendered with NEE and BSDF sampling, 4096 samples per pixel}{figure.5.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Different Cache Configurations}{47}{subsection.5.4.2}}
+\newlabel{dcc}{{5.4.2}{47}{Different Cache Configurations\relax }{subsection.5.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Left: camera caches only (3768).\newline  Right: 20k caches including camera caches.\newline  Note how the artefacts vanish on the left where the caustic ends.}}{47}{figure.5.7}}
+\newlabel{artefacts}{{\relax 5.7}{47}{Left: camera caches only (3768).\newline Right: 20k caches including camera caches.\newline Note how the artefacts vanish on the left where the caustic ends}{figure.5.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Left: 2k photon paths, 3768 caches, 2k photons per cache.\newline  Right: 200k photon paths, 3768 caches, 20 photons per cache.}}{47}{figure.5.8}}
+\newlabel{noises}{{\relax 5.8}{47}{Left: 2k photon paths, 3768 caches, 2k photons per cache.\newline Right: 200k photon paths, 3768 caches, 20 photons per cache}{figure.5.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.3}Durations}{48}{subsection.5.4.3}}
+\newlabel{durations}{{5.4.3}{48}{Durations\relax }{subsection.5.4.3}{}}
+\@setckpt{chapterRendering}{
+\setcounter{page}{49}
+\setcounter{equation}{0}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{5}
+\setcounter{section}{4}
+\setcounter{subsection}{3}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{8}
+\setcounter{table}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{45}
+\setcounter{btxromaniannumeral}{0}
+\setcounter{parentequation}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{6}
+\setcounter{ALG@line}{2}
+\setcounter{ALG@rem}{2}
+\setcounter{ALG@nested}{0}
+\setcounter{ALG@Lnr}{2}
+\setcounter{ALG@blocknr}{10}
+\setcounter{ALG@storecount}{0}
+\setcounter{ALG@tmpcounter}{0}
+\setcounter{blindtext}{1}
+\setcounter{Blindtext}{5}
+\setcounter{blind@countparstart}{0}
+\setcounter{blindlist}{0}
+\setcounter{blindlistlevel}{0}
+\setcounter{blindlist@level}{0}
+\setcounter{blind@listcount}{0}
+\setcounter{blind@levelcount}{0}
+\setcounter{blind@randomcount}{0}
+\setcounter{blind@randommax}{0}
+\setcounter{blind@pangramcount}{0}
+\setcounter{blind@pangrammax}{0}
+\setcounter{section@level}{2}
+}
